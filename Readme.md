@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Дмитрий Спирин](https://up.htmlacademy.ru/htmlcss/23/user/841249).
-* Наставник: `Неизвестно`.
+* Наставник:[Елена Забара](https://htmlacademy.ru/profile/lena___elena)
 
 ---
 
