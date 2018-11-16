@@ -1,62 +1,262 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <a class="header__logo">device</a>
-          <ul class="header__ui">
-            <li class="header__ui-search">
-              <input type="text">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a class="header__logo page-logo">device</a>
+      <ul class="header__ui page__ui">
+        <li class="header__ui page__ui-search">
+          <input type="text">
+        </li>
+        <li class="header__ui page__ui-sign-in">
+          <a class="header__ui page__ui-link">Войти</a>
+        </li>
+        <li class="header__ui page__ui-compare">
+          <a class="header__ui page__ui-link">Сравнить</a>
+        </li>
+        <li class="header__ui page__ui-basket">
+          <a class="header__ui page__ui-link">Корзина</a>
+        </li>
+      </ul>
+      <ul class="header__info">
+        <li class="header__info-item header__catalog">
+          <a class="header__info-link">Каталог</a>
+          <ul class="header__catalog-drop-down">
+            <li class="drop-down-item">
+              <a class="drop-down-link" href="">Виртуальная реальность</a>
             </li>
-            <li class="header__ui-sign-in">
-              <a class="header__ui-link">Войти</a>
+            <li class="drop-down-item">
+              <a class="drop-down-link" href="">Фитнес-браслеты</a>
             </li>
-            <li class="header__ui-compare">
-              <a class="header__ui-link">Сравнить</a>
+            <li class="drop-down-item">
+              <a class="drop-down-link" href="">Квадрокоптеры</a>
             </li>
-            <li class="header__ui-basket">
-              <a class="header__ui-link">Корзина</a>
+            <li class="drop-down-item">
+              <a class="drop-down-link" href="">Моноподы для селфи</a>
+            </li>
+            <li class="drop-down-item">
+              <a class="drop-down-link" href="">Умные часы</a>
+            </li>
+            <li class="drop-down-item">
+              <a class="drop-down-link" href="">Экшн-камеры</a>
             </li>
           </ul>
-          <ul class="header__info">
-            <li class="header__info-item header__catalog">
-              <a class="header__info-link">Каталог</a>
-              <ul class="header__catalog-drop-down">
-                <li class="drop-down-item">
-                  <a class="drop-down-link" href="">Виртуальная реальность</a>
-                </li>
-                <li class="drop-down-item">
-                  <a class="drop-down-link" href="">Фитнес-браслеты</a>
-                </li>
-                <li class="drop-down-item">
-                  <a class="drop-down-link" href="">Квадрокоптеры</a>
-                </li>
-                <li class="drop-down-item">
-                  <a class="drop-down-link" href="">Моноподы для селфи</a>
-                </li>
-                <li class="drop-down-item">
-                  <a class="drop-down-link" href="">Умные часы</a>
-                </li>
-                <li class="drop-down-item">
-                  <a class="drop-down-link" href="">Экшн-камеры</a>
-                </li>
-              </ul>
-            </li>
-            <li class="header__info-item">
-              <a class="header__info-link" href="">Доставка</a>
-            </li>
-            <li class="header__info-item">
-              <a class="header__info-link" href="">Гарантия</a>
-            </li>
-            <li class="header__info-item">
-              <a class="header__info-link" href="">Контакты</a>
-            </li>
+        </li>
+        <li class="header__conditions-item">
+          <a class="header__conditions-link" href="">Доставка</a>
+        </li>
+        <li class="header__conditions-item">
+          <a class="header__conditions-link" href="">Гарантия</a>
+        </li>
+        <li class="header__conditions-item">
+          <a class="header__conditions-link" href="">Контакты</a>
+        </li>
+  </div>
+  </header>
+  <main>
+    <section class="main__slider">
+      <div class="main__slider-block">
+        <img class="main__slider-img" src="http://placekitten.com/384/486" alt="slider-img">
+        <div class="main__slider-content">
+          <h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
+          <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
+            длиной и весом всего 5 килограмм.</p>
+          <button class="slider-btn"> Подробнее</button>
+          <table class="slider-table">
+            <tr>
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr>
+              <td>Длинна палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
         </div>
-      </header>
-    </div>
-  </body>
+        <div class="main__slider-block">
+          <img class="main__slider-img" src="http://placekitten.com/384/486" alt="slider-img">
+          <div class="main__slider-content">
+            <h2 class="slider-title">Худеем правильно!</h2>
+            <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+              соблюдать диету.</p>
+            <button class="slider-btn"> Подробнее</button>
+            <table class="slider-table">
+              <tr>
+                <td>48 часов</td>
+              </tr>
+              <tr>
+                <td>Без подзарядки</td>
+              </tr>
+            </table>
+          </div>
+          <div class="main__slider-block">
+            <img class="main__slider-img" src="http://placekitten.com/384/486" alt="slider-img">
+            <div class="main__slider-content">
+              <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.</p>
+              <button class="slider-btn"> Подробнее</button>
+              <table class="slider-table">
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr>
+                  <td>Дальность полёта</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+    </section>
+    <section class="main__categories">
+      <div class="categories__block">
+        <div class="categories__block-item">
+          <img class="categories__block-item-icon" src="http://placekitten.com/97/55" alt="VR очки">
+        </div>
+        <p class="categories__block-text">Виртуальная реальность</p>
+      </div>
+      <div class="categories__block">
+        <div class="categories__block-item">
+          <img class="categories__block-item-icon" src="http://placekitten.com/97/55" alt="селфи палка">
+        </div>
+        <p class="categories__block-text">Моноподы для селфи</p>
+      </div>
+      <div class="categories__block">
+        <div class="categories__block-item">
+          <img class="categories__block-item-icon" src="http://placekitten.com/97/55" alt="камера">
+        </div>
+        <p class="categories__block-text">Экшн-камеры</p>
+      </div>
+      <div class="categories__block">
+        <div class="categories__block-item">
+          <img class="categories__block-item-icon" src="http://placekitten.com/97/55" alt="браслет">
+        </div>
+        <p class="categories__block-text">Фитнес-браслеты</p>
+      </div>
+      <div class="categories__block">
+        <div class="categories__block-item">
+          <img class="categories__block-item-icon" src="http://placekitten.com/97/55" alt="часы">
+        </div>
+        <p class="categories__block-text">Умные часы</p>
+      </div>
+      <div class="categories__block">
+        <div class="categories__block-item">
+          <img class="categories__block-item-icon" src="http://placekitten.com/97/55" alt="Квадрокоптер">
+        </div>
+        <p class="categories__block-text">Квадрокоптеры</p>
+      </div>
+    </section>
+    <section class="main__services">
+      <ul class="main__services-list">
+        <li class="services-list-item">
+          <a class="services-list-link">Доставка</a>
+        </li>
+        <li class="services-list-item">
+          <a class="services-list-link">Гарантия</a>
+        </li>
+        <li class="services-list-item">
+          <a class="services-list-link">Кредит</a>
+        </li>
+      </ul>
+      <div class="main__services-block">
+        <h2 class="services-block-title">Доставка</h2>
+        <p class="services-block-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+          бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </div>
+      <div class="main__services-block">
+        <h2 class="services-block-title">Гарантия</h2>
+        <p class="services-block-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
+          мы выдадим вам новый. Товар, не дом, конечно же.</p>
+      </div>
+      <div class="main__services-block">
+        <h2 class="services-block-title">Кредит</h2>
+        <p class="services-block-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+          наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+      </div>
+    </section>
+    <section class="main__partners">
+      <img class="partners-image" src="http://placekitten.com/250/100" width="250" height="100" alt="">
+      <img class="partners-image" src="http://placekitten.com/250/100" width="250" height="100" alt="">
+      <img class="partners-image" src="http://placekitten.com/250/100" width="250" height="100" alt="">
+      <img class="partners-image" src="http://placekitten.com/250/100" width="250" height="100" alt="">
+    </section>
+    <section class="main__info">
+      <div class="info__about">
+        <h2 class="about-title">О нас</h2>
+        <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="about-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+          транспортными компаниями:</p>
+        <ul class="about-list">
+          <li class="about-list-item">Деловые Линии</li>
+          <li class="about-list-item">Автотрейдинг</li>
+          <li class="about-list-item">ЖелДорЭкспедиция</li>
+        </ul>
+        <button class="about-btn">подробнее о нас</button>
+      </div>
+      <div class="info__contacts">
+        <h2 class="contacts-title">Контакты</h2>
+        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+          работоспособность покупки. Всякое бывает.</p>
+        <div class="contacts-map"></div>
+        <button class="contacts-btn">напишите нам</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__ui">
+        <a class="footer__logo page-logo">device</a>
+        <ul class="footer__ui-block page__ui">
+          <li class="footer__ui-item page__ui-sign-in">
+            <a class="footer__ui-link page__ui-link">Войти</a>
+          </li>
+          <li class="footer__ui-item page__ui-compare">
+            <a class="footer__ui-link page__ui-link">Сравнить</a>
+          </li>
+          <li class="footer__ui-item page__ui-basket">
+            <a class="footer__ui-link page__ui-link">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <p class="footer__info-adress">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer__info-block">
+          <li class="footer__conditions-item page-conditions-item">
+            <a class="footer__conditions-link page-conditions-link" href="">Доставка</a>
+          </li>
+          <li class="footer__conditions-item page-conditions-item">
+            <a class="footer__conditions-link page-conditions-link" href="">Гарантия</a>
+          </li>
+          <li class="footer__conditions-item page-conditions-item">
+            <a class="footer__conditions-link page-conditions-link" href="">Контакты</a>
+          </li>
+        </ul>
+        <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>  
+      </div>
+      <div class="footer__socials">
+        <ul class="footer__socials-block">
+          <li class="socials-item">
+            <a href="#">facebook</a>
+          </li>
+          <li class="socials-item">
+            <a href="#">instagram</a>
+          </li>
+          <li class="socials-item">
+            <a href="#">twitter</a>
+          </li>
+        </ul>
+        <div class="footer__socials-icon">html Academy</div>
+      </div>
+    </footer>
+  </main>
+  </div>
+</body>
+
 </html>
