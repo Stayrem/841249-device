@@ -9,53 +9,53 @@
 <body>
   <header class="header">
     <a class="header__logo page-logo">device</a>
-    <ul class="header__user-menu page__user-menu">
-      <li class="header__user-menu-item page__user-menu">
+    <ul class="header__user-menu user-menu">
+      <li class="header__user-menu-item user-menu">
         <input type="text" class="header__search search">
       </li>
-      <li class="header__user-menu-item page__user-sign-in">
+      <li class="header__user-menu-item user-sign-in">
         <a href="#" class="header__user-link user-link--login">Войти</a>
       </li>
-      <li class="header__user-menu-item page__ui-compare">
+      <li class="header__user-menu-item user-compare">
         <a href="#" class="header__user-link user-link--compare">Сравнить</a>
       </li>
-      <li class="header__user-menu-item page__ui-basket">
+      <li class="header__user-menu-item user-basket">
         <a href="#" class="header__user-link user-link--basket">Корзина</a>
       </li>
     </ul>
     <nav class="menu">
       <ul class="menu__list">
-        <li class="menu-item">
-          <a class="menu-link">Каталог</a>
+        <li class="menu__item">
+          <a class="menu__link">Каталог</a>
           <ul class="menu__dropdown">
             <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="">Виртуальная реальность</a>
+              <a class="menu__dropdown-link" href="#">Виртуальная реальность</a>
             </li>
             <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="">Фитнес-браслеты</a>
+              <a class="menu__dropdown-link" href="#">Фитнес-браслеты</a>
             </li>
             <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="">Квадрокоптеры</a>
+              <a class="menu__dropdown-link" href="#">Квадрокоптеры</a>
             </li>
             <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="">Моноподы для селфи</a>
+              <a class="menu__dropdown-link" href="catalog.html">Моноподы для селфи</a>
             </li>
             <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="">Умные часы</a>
+              <a class="menu__dropdown-link" href="#">Умные часы</a>
             </li>
             <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="">Экшн-камеры</a>
+              <a class="menu__dropdown-link" href="#">Экшн-камеры</a>
             </li>
           </ul>
         </li>
-        <li class="menu-item">
-          <a class="menu-link" href="">Доставка</a>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Доставка</a>
         </li>
-        <li class="menu-item">
-          <a class="menu-link" href="">Гарантия</a>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Гарантия</a>
         </li>
-        <li class="menu-item">
-          <a class="menu-link" href="">Контакты</a>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -124,7 +124,7 @@
     <section class="category">
       <ul class="category__list">
         <li class="category__item">
-          <a class="category__link category__link--vr" href="catalog.html">
+          <a class="category__link category__link--vr" href="#">
             <p class="category__text">Виртуальная реальность</p>
           </a>
         </li>
@@ -134,22 +134,22 @@
           </a>
         </li>
         <li class="category__item">
-          <a class="category__link category__link--camera" href="catalog.html">
+          <a class="category__link category__link--camera" href="#">
             <p class="category__text">Экшн-камеры</p>
           </a>
         </li>
         <li class="category__item">
-          <a class="category__link category__link--bracelet" href="catalog.html">
+          <a class="category__link category__link--bracelet" href="#">
             <p class="category__text">Фитнес-браслеты</p>
           </a>
         </li>
         <li class="category__item">
-          <a class="category__link category__link--watch" href="catalog.html">
+          <a class="category__link category__link--watch" href="#">
             <p class="category__text">Умные часы</p>
           </a>
         </li>
         <li class="category__item">
-          <a class="category__link category__link--dron" href="catalog.html">
+          <a class="category__link category__link--dron" href="#">
             <p class="category__text">Квадрокоптеры</p>
           </a>
         </li>
@@ -158,16 +158,16 @@
     <section class="services">
       <ul class="services__list">
         <li class="services__item">
-          <a class="services__link">Доставка</a>
+          Доставка
         </li>
         <li class="services__item">
-          <a class="services__link">Гарантия</a>
+          Гарантия
         </li>
         <li class="services__item">
-          <a class="services__link">Кредит</a>
+          Кредит
         </li>
       </ul>
-      <div class="services-content services__content--delivery">
+      <div class="services__content services__content--delivery">
         <h2 class="services__title">Доставка</h2>
         <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
           бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -184,10 +184,18 @@
       </div>
     </section>
     <section class="partners">
-      <img class="partners__image" src="http://placekitten.com/250/100" width="250" height="100" alt="">
-      <img class="partners__image" src="http://placekitten.com/250/100" width="250" height="100" alt="">
-      <img class="partners__image" src="http://placekitten.com/250/100" width="250" height="100" alt="">
-      <img class="partners__image" src="http://placekitten.com/250/100" width="250" height="100" alt="">
+      <ul class="partners__list">
+        <li class="partners__item">
+          <img class="partners__image" src="http://placekitten.com/250/100" width="250" height="100" alt=""></li>
+        <li class="partners__item">
+          <img class="partners__image" src="http://placekitten.com/250/100" width="250" height="100" alt=""></li>
+        <li class="partners__item">
+          <img class="partners__image" src="http://placekitten.com/250/100" width="250" height="100" alt=""></li>
+        <li class="partners__item">
+          <img class="partners__image" src="http://placekitten.com/250/100" width="250" height="100" alt=""></li>
+        <li class="partners__item">
+          <img class="partners__image" src="http://placekitten.com/250/100" width="250" height="100" alt=""></li>
+      </ul>
     </section>
     <section class="info">
       <div class="info__about">
@@ -207,7 +215,7 @@
         <p class="info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
         <div class="info__map"></div>
-        <button class="info-btn btn">напишите нам</button>
+        <a class="info-btn btn">напишите нам</a>
       </div>
     </section>
   </main>
