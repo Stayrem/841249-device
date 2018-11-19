@@ -77,7 +77,7 @@
     </nav>
     <section class="filter">
       <h2 class="filter__title">фильтр</h2>
-      <form action="" method="post" class="filter__form">
+      <form action="#" method="post" class="filter__form">
         <p class="filter__name">Стоимость</p>
         <div class="filter__price">
           <div class="filter__price-point"></div>
@@ -103,8 +103,8 @@
         <input type="submit" value="показать">
       </form>
     </section>
-    <section class="sort">
-      <div class="sort__settings">
+    <div class="wrapper">
+      <div class="sort">
         <h2 class="sort__title">сортировка:</h2>
         <ul class="sort__list sort__list--by">
           <li class="sort__item">
@@ -126,68 +126,60 @@
           </li>
         </ul>
       </div>
-      <div class="sort__gallery">
-        <div class="sort__gallery-item">
-          <img src="http://placekitten.com/360/380" alt="product">
-          <ul class="sort__gallery-list">
-            <li class="sort__gallery-item">
-              <a href="#">Любительская селфи-палка</a>
-            </li>
-            <li class="sort__gallery-item">
-              <a href="#">500 руб.</a>
-            </li>
-          </ul>
-        </div>
-        <div class="sort__gallery-item">
-          <img src="http://placekitten.com/360/380" alt="product">
-          <ul class="sort__gallery-list">
-            <li class="sort__gallery-item">
-              <a href="#">Профессиональная селфи-палка</a>
-            </li>
-            <li class="sort__gallery-item">
-              <a href="#">1500 руб.</a>
-            </li>
-          </ul>
-        </div>
-        <div class="sort__gallery-item">
-          <img src="http://placekitten.com/360/380" alt="product">
-          <ul class="sort__gallery-list">
-            <li class="sort__gallery-item">
-              <a href="#">Непотопляемая селфи-палка</a>
-            </li>
-            <li class="sort__gallery-item">
-              <a href="#">2500 руб.</a>
-            </li>
-          </ul>
-        </div>
-        <div class="sort__gallery-item">
-          <img src="http://placekitten.com/360/380" alt="product">
-          <ul class="sort__gallery-list">
-            <li class="sort__gallery-item">
-              <a href="#">Селфи-палка «Следуй за мной»</a>
-            </li>
-            <li class="sort__gallery-item">
-              <a href="#">4900 руб.</a>
-            </li>
-          </ul>
-        </div>
+      <div class="catalog">
+        <article class="catalog__item">
+          <img class="catalog__img" src="http://placekitten.com/360/380" alt="product">
+          <div class="catalog__title">
+            <a class="catalog__link" href="#">Любительская селфи-палка</a>
+          </div>
+          <div class="catalog__price">
+            500 руб.
+          </div>
+        </article>
+        <article class="catalog__item">
+          <img class="catalog__img" src="http://placekitten.com/360/380" alt="product">
+          <div class="catalog__title">
+            <a class="catalog__link" href="#">Профессиональная селфи-палка</a>
+          </div>
+          <div class="catalog__price">
+            1 500 руб.
+          </div>
+        </article>
+        <article class="catalog__item">
+          <img class="catalog__img" src="http://placekitten.com/360/380" alt="product">
+          <div class="catalog__title">
+            <a class="catalog__link" href="#">Непотопляемая селфи-палка</a>
+          </div>
+          <div class="catalog__price">
+            2 500 руб.
+          </div>
+        </article>
+        <article class="catalog__item">
+          <img class="catalog__img" src="http://placekitten.com/360/380" alt="product">
+          <div class="catalog__title">
+            <a class="catalog__link" href="#">Селфи-палка "Следуй за мной"</a>
+          </div>
+          <div class="catalog__price">
+            4 900 руб.
+          </div>
+        </article>
       </div>
-      <nav class="nav-gallery">
-        <a class="nav-gallery__btn" href="#">назад</a>
-        <ul class="nav-gallery__list">
-          <li class="nav-gallery__item">
-            <a class="nav-gallery__link" href="#">1</a>
+      <nav class="pagination">
+        <a class="pagination__btn btn" href="#">назад</a>
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">1</a>
           </li>
-          <li class="nav-gallery__item">
-            <a class="nav-gallery__link" href="#">2</a>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
           </li>
-          <li class="nav-gallery__item">
-            <a class="nav-gallery__link" href="#">3</a>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
           </li>
         </ul>
-        <a class="nav-gallery__btn" href="#">вперёд</a>
+        <a class="pagination__btn btn" href="#">вперёд</a>
       </nav>
-    </section>
+    </div>
   </main>
   <footer class="footer">
     <ul class="footer__user-menu">
