@@ -262,6 +262,23 @@
     </ul>
     <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   </footer>
+  <div class="write-us visually-hidden">
+    <button class="write-us__close  btn__close">x</button>
+    <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="write-us__title" for="write-us__name"> Ваше имя:</label>
+      <input class="write-us__name" name="name" id="write-us__name" type="text">
+      <label for="write-us__mail"> Ваш e-mail:</label>
+      <input type="email" name="e-mail" id="write-us__mail">
+      <label for="write-us__text">Текст письма:</label>
+      <textarea name="description" id="write-us__text" cols="30" rows="10"></textarea>
+      <input class="write-us btn" type="submit" value="отправить">
+    </form>
+  </div>
+  <div class="map visually-hidden">
+    <button class="map__btn btn__close">x</button>
+    <img class="map__img" src="img/content/map.jpg" alt="карта">
+  </div>
+
 </body>
 
 </html>
