@@ -11,7 +11,8 @@
     <a class="header__logo page-logo">device</a>
     <ul class="header__user-menu user-menu">
       <li class="header__user-menu-item user-menu">
-        <input type="text" class="header__search search">
+        <label class="visally-hidden" for="header__search">поиск</label>
+        <input id="header__search" type="text" class="header__search search">
       </li>
       <li class="header__user-menu-item user-sign-in">
         <a href="#" class="header__user-link header__user-link--login">Войти</a>
@@ -186,13 +187,13 @@
     <section class="partners">
       <ul class="partners__list">
         <li class="partners__item">
-          <img class="partners__image" src="img/content/logo-1.png" width="260"  height="100" alt="partner"></li>
+          <img class="partners__image" src="img/content/logo-1.png" width="260" height="100" alt="partner"></li>
         <li class="partners__item">
-          <img class="partners__image" src="img/content/logo-2.png" width="260"  height="100" alt="partner"></li>
+          <img class="partners__image" src="img/content/logo-2.png" width="260" height="100" alt="partner"></li>
         <li class="partners__item">
-          <img class="partners__image" src="img/content/logo-3.png" width="260"  height="100" alt="partner"></li>
+          <img class="partners__image" src="img/content/logo-3.png" width="260" height="100" alt="partner"></li>
         <li class="partners__item">
-          <img class="partners__image" src="img/content/logo-4.png" width="260"  height="100" alt="partner"></li>
+          <img class="partners__image" src="img/content/logo-4.png" width="260" height="100" alt="partner"></li>
       </ul>
     </section>
     <section class="info">
@@ -265,20 +266,25 @@
   <div class="write-us visually-hidden">
     <button class="write-us__close  btn__close">x</button>
     <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="write-us__title" for="write-us__name"> Ваше имя:</label>
-      <input class="write-us__name" name="name" id="write-us__name" type="text">
-      <label for="write-us__mail"> Ваш e-mail:</label>
-      <input type="email" name="e-mail" id="write-us__mail">
-      <label for="write-us__text">Текст письма:</label>
-      <textarea name="description" id="write-us__text" cols="30" rows="10"></textarea>
-      <input class="write-us btn" type="submit" value="отправить">
+      <p>
+        <label class="write-us__title" for="write-us__name"> Ваше имя:</label>
+        <input class="write-us__name" name="name" id="write-us__name" type="text">
+      </p>
+      <p>
+        <label for="write-us__mail"> Ваш e-mail:</label>
+        <input type="email" name="e-mail" id="write-us__mail">
+      </p>
+      <p>
+        <label for="write-us__text">Текст письма:</label>
+        <textarea name="description" id="write-us__text" cols="30" rows="10"></textarea>
+      </p>
+      <button class="write-us-btn btn" type="submit">отправить</button>
     </form>
   </div>
   <div class="map visually-hidden">
-    <button class="map__btn btn__close">x</button>
-    <img class="map__img" src="img/content/map.jpg" alt="карта">
+    <button class="map-btn btn__close">x</button>
+    <img class="map-img" src="img/content/map.jpg" alt="карта">
   </div>
-
 </body>
 
 </html>

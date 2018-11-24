@@ -78,29 +78,48 @@
     <section class="filter">
       <h2 class="filter__title">фильтр</h2>
       <form action="https://echo.htmlacademy.ru" method="post" class="filter__form">
-        <p class="filter__name">Стоимость</p>
-        <div class="filter__price">
-          <div class="filter__price-point"></div>
-          <div class="filter__price-line"></div>
-          <div class="filter__price-point"></div>
-        </div>
-        <p class="filter__name">Цвет</p>
-        <input type="checkbox" name="black" id="color__black">
-        <label for="color__black">Чёрный</label>
-        <input type="checkbox" name="white" id="color__white">
-        <label for="color__white">Белый </label>
-        <input type="checkbox" name="blue" id="color__blue">
-        <label for="color__blue">Синий</label>
-        <input type="checkbox" name="red" id="color__red">
-        <label for="color__red">Красный</label>
-        <input type="checkbox" name="pink" id="color__pink">
-        <label for="color__pink">Розовый</label>
-        <p class="filter__name">Bluetooth</p>
-        <input value="yes" type="radio" name="bluetooth" id="radio__yes">
-        <label for="radio__yes">Есть</label>
-        <input value="no" type="radio" name="bluetooth" id="radio__no">
-        <label for="radio__no">Нет</label>
-        <input type="submit" value="показать">
+        <fieldset>
+          <legend class="filter__name">Стоимость</legend>
+          <div class="filter__price">
+            <div class="filter__price-point"></div>
+            <div class="filter__price-line"></div>
+            <div class="filter__price-point"></div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="filter__name">Цвет</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="black" id="color__black">
+              <label for="color__black">Чёрный</label></li>
+            <li>
+              <input type="checkbox" name="white" id="color__white">
+              <label for="color__white">Белый </label>
+            </li>
+            <li>
+              <input type="checkbox" name="blue" id="color__blue">
+              <label for="color__blue">Синий</label>
+            </li>
+            <li>
+              <input type="checkbox" name="red" id="color__red">
+              <label for="color__red">Красный</label>
+            </li>
+            <li><input type="checkbox" name="pink" id="color__pink">
+              <label for="color__pink">Розовый</label></li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="filter__name">Bluetooth</legend>
+          <ul>
+            <li>
+              <input value="yes" type="radio" name="bluetooth" id="radio__yes">
+              <label for="radio__yes">Есть</label></li>
+            <li>
+              <input value="no" type="radio" name="bluetooth" id="radio__no">
+              <label for="radio__no">Нет</label></li>
+          </ul>
+        </fieldset>
+        <input id="filter__submit" type="submit" value="показать">
       </form>
     </section>
     <div class="wrapper">
@@ -119,10 +138,12 @@
         </ul>
         <ul class="sort__list sort__list--triangles">
           <li class="sort__item">
-            <a href="#"></a>
+            <a class="sort__link visually-hidden" href="#">
+              <span>в порядке возростания</span>
+            </a>
           </li>
           <li class="sort__item">
-            <a href="#"></a>
+            <a class="sort__link visually-hidden" href="#">в порядке убывания</a>
           </li>
         </ul>
       </div>
