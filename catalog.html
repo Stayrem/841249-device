@@ -11,6 +11,7 @@
     <a href="index.html" class="header__logo page-logo">device</a>
     <ul class="header__user-menu user-menu">
       <li class="header__user-menu-item user-menu">
+ checked        <label class="visally-hidden" for="header__search">поиск</label>
         <input type="text" class="header__search search">
       </li>
       <li class="header__user-menu-item user-sign-in">
@@ -90,18 +91,18 @@
           <legend class="filter__name">Цвет</legend>
           <ul>
             <li>
-              <input type="checkbox" name="black" id="color__black">
+              <input checked type="checkbox" name="black" id="color__black">
               <label for="color__black">Чёрный</label></li>
             <li>
               <input type="checkbox" name="white" id="color__white">
               <label for="color__white">Белый </label>
             </li>
             <li>
-              <input type="checkbox" name="blue" id="color__blue">
+              <input checked type="checkbox" name="blue" id="color__blue">
               <label for="color__blue">Синий</label>
             </li>
             <li>
-              <input type="checkbox" name="red" id="color__red">
+              <input checked type="checkbox" name="red" id="color__red">
               <label for="color__red">Красный</label>
             </li>
             <li><input type="checkbox" name="pink" id="color__pink">
@@ -112,14 +113,14 @@
           <legend class="filter__name">Bluetooth</legend>
           <ul>
             <li>
-              <input value="yes" type="radio" name="bluetooth" id="radio__yes">
+              <input checked value="yes" type="radio" name="bluetooth" id="radio__yes">
               <label for="radio__yes">Есть</label></li>
             <li>
               <input value="no" type="radio" name="bluetooth" id="radio__no">
               <label for="radio__no">Нет</label></li>
           </ul>
         </fieldset>
-        <input id="filter__submit" type="submit" value="показать">
+        <button class="filter-btn btn" type="submit">показать</button>
       </form>
     </section>
     <div class="wrapper">
@@ -208,13 +209,13 @@
         <a href="#">device</a>
       </li>
       <li class="footer__user-menu-item user-sign-in">
-        <a class="footer__user-link user-link--login">Войти</a>
+        <a href="#" class="footer__user-link user-link--login">Войти</a>
       </li>
       <li class="footer__user-menu-item user-compare">
-        <a class="footer__user-link user-link--compare">Сравнить</a>
+        <a href="#" class="footer__user-link user-link--compare">Сравнить</a>
       </li>
       <li class="footer__user-menu-item user-basket">
-        <a class="footer__user-link user-link--basket">Корзина</a>
+        <a href="#" class="footer__user-link user-link--basket">Корзина</a>
       </li>
     </ul>
     <div class="footer__info-block">
