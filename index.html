@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" >
+  <link rel="stylesheet" href="css/fonts/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>HTML Academy: Девайс</title>
 </head>
-
 <body>
   <header class="header">
     <a class="header__logo page-logo">device</a>
     <ul class="header__user-menu user-menu">
-      <li class="header__user-menu-item user-menu">
+      <li class="header__user-menu-item header__user-menu-item--search">
         <label class="visally-hidden" for="header__search">поиск</label>
-        <input id="header__search" type="text" class="header__search search">
+        <input id="header__search" type="text" class="header__search search" placeholder="Поиск по сайту">
       </li>
       <li class="header__user-menu-item user-sign-in">
         <a href="#" class="header__user-link header__user-link--login">Войти</a>
@@ -27,7 +29,7 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item">
-          <a class="menu__link">Каталог</a>
+          <a class="menu__link menu__link--catalog">каталог товаров</a>
           <ul class="menu__dropdown">
             <li class="menu__dropdown-item">
               <a class="menu__dropdown-link" href="#">Виртуальная реальность</a>
@@ -213,7 +215,7 @@
         <h2 class="info__title">Контакты</h2>
         <p class="info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
-        <div class="info__map"></div>
+        <img class="info__map" src="img/content/map.jpg">
         <a href="#" class="info-btn btn">напишите нам</a>
       </div>
     </section>
@@ -221,7 +223,7 @@
   <footer class="footer">
     <ul class="footer__user-menu">
       <li class="footer__user-menu page-logo">
-        <a href="#">device</a>
+        <a class="footer__logo-link" href="#">device</a>
       </li>
       <li class="footer__user-menu-item user-sign-in">
         <a href="#" class="footer__user-link user-link--login">Войти</a>
@@ -260,8 +262,10 @@
       <li class="socials-item">
         <a class="socials-link" href="#">twitter</a>
       </li>
+      <li>
+        <a class="socials-link" href="#" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   </footer>
   <div class="write-us visually-hidden">
     <button class="write-us__close  btn__close">x</button>
