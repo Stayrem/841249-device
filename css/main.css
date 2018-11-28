@@ -14,7 +14,7 @@ li {
 }
 
 .visually-hidden {
-  display: none;
+  display: none !important;
 }
 
 /*header*/
@@ -28,6 +28,7 @@ li {
   flex-direction: column;
   padding: 0 60px 60px 60px;
   margin-top: 40px;
+  box-sizing: border-box;
 }
 
 .header__user-menu {
@@ -44,7 +45,8 @@ li {
 .menu__list {
   display: flex;
   justify-content: space-between;
-  font-family: Gilroy ExtraBold;
+  font-family: Gilroy;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 18px;
   padding-top: 50px; 
@@ -137,7 +139,8 @@ li {
 }
 
 .page-logo {
-  font-family: Gilroy ExtraBold;
+  font-family: Gilroy;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 48px;
 }
@@ -148,8 +151,43 @@ main {
   flex-direction: column;
   width: 83.393242272%;
   max-width: 1160px;
+  box-sizing: border-box;
 }
-
+/*slider*/
+.slider{
+  display: flex;
+}
+.slider__item{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -70px;
+}
+.slider__title{
+  font-size: 47px;
+  font-family: Gilroy;
+  width: 390px;
+}
+.slider__text{
+  padding-bottom: 60px;
+  font-family: 'Open Sans', sans-serif;
+}
+.slider__content{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 460px;
+  margin-left: 125px;
+}
+.slider__table{
+  padding-top: 70px;
+}
+.slider__tr--first{
+  font-size: 36px;
+  font-family: Gilroy;
+}
+.slider__tr--second{
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+}
 /*info*/
 .info {
   display: flex;
@@ -157,7 +195,7 @@ main {
 }
 
 .info__title {
-  font-family: Gilroy ExtraBold;
+  font-family: Gilroy;
   font-size: 47px;
 }
 
@@ -167,7 +205,7 @@ main {
 }
 
 .info__list {
-  font-family: Gilroy ExtraBold;
+  font-family: Gilroy;
 }
 
 .info__item {
@@ -185,7 +223,8 @@ main {
 }
 
 .btn {
-  font-family: Gilroy ExtraBold;
+  font-family: Gilroy;
+  font-weight: 600;
   font-size: 18px;
 }
 
@@ -198,6 +237,7 @@ main {
   min-width: 100%;
   height: 323px;
   padding-top: 65px;
+  box-sizing: border-box;
 }
 
 .footer__user-menu {
@@ -265,7 +305,6 @@ main {
 
 .footer__info-link {
   color: #fff;
-  font-family: Gilroy ExtraBold;
   font-size: 18px;
 }
 
@@ -274,6 +313,8 @@ main {
   padding: 0;
   flex-basis: 423px;
   justify-content: space-around;
+  font-family: Gilroy;
+  font-weight: 600;
 }
 
 .footer__socials {
