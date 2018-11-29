@@ -64,14 +64,14 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
+  <main class="main-catalog">
     <h1 class="main__title">Моноподы для селфи</h1>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item">
+        <li class="nav__item nav__item--arrow">
           <a class="nav__link" href="index.html">Главная</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__item--arrow">
           <a class="nav__link" href="#">Каталог товаров</a>
         </li>
         <li class="nav__item">
@@ -79,8 +79,9 @@
         </li>
       </ul>
     </nav>
+    <div class="page-wrapper">
     <section class="filter">
-      <h2 class="filter__title">фильтр</h2>
+      <h2 class="filter__title">фильтр:</h2>
       <form action="https://echo.htmlacademy.ru" method="post" class="filter__form">
         <fieldset>
           <legend class="filter__name">Стоимость</legend>
@@ -131,13 +132,13 @@
         <h2 class="sort__title">сортировка:</h2>
         <ul class="sort__list sort__list--by">
           <li class="sort__item">
-            <a class="sort__link" href="#">По цене</a>
+            <a class="sort__link" href="#"> <span class="visually-hidden"> По цене </span></a>
           </li>
           <li class="sort__item">
-            <a class="sort__link" href="#">По типу</a>
+            <a class="sort__link" href="#"> <span class="visually-hidden"> По типу </span></a>
           </li>
           <li class="sort__item">
-            <a class="sort__link" href="#">По популярности</a>
+            <a class="sort__link" href="#"> <span class="visually-hidden"> По популярности </span></a>
           </li>
         </ul>
         <ul class="sort__list sort__list--triangles">
@@ -153,7 +154,7 @@
       </div>
       <div class="catalog">
         <article class="catalog__item">
-          <img class="catalog__img" src="img/content/item-1.png" alt="product">
+          <img class="catalog__img" src="img/content/item-1.png" height="380px" width="360px" alt="product">
           <div class="catalog__title">
             <a class="catalog__link" href="#">Любительская селфи-палка</a>
           </div>
@@ -162,7 +163,7 @@
           </div>
         </article>
         <article class="catalog__item">
-          <img class="catalog__img" src="img/content/item-2.png" alt="product">
+          <img class="catalog__img" src="img/content/item-2.png" height="380px" width="360px" alt="product">
           <div class="catalog__title">
             <a class="catalog__link" href="#">Профессиональная селфи-палка</a>
           </div>
@@ -171,7 +172,7 @@
           </div>
         </article>
         <article class="catalog__item">
-          <img class="catalog__img" src="img/content/item-3.png" alt="product">
+          <img class="catalog__img" src="img/content/item-3.png" height="380px" width="360px" alt="product">
           <div class="catalog__title">
             <a class="catalog__link" href="#">Непотопляемая селфи-палка</a>
           </div>
@@ -180,7 +181,7 @@
           </div>
         </article>
         <article class="catalog__item">
-          <img class="catalog__img" src="img/content/item-4.png" alt="product">
+          <img class="catalog__img" src="img/content/item-4.png" height="380px" width="360px" alt="product">
           <div class="catalog__title">
             <a class="catalog__link" href="#">Селфи-палка "Следуй за мной"</a>
           </div>
@@ -205,6 +206,7 @@
         <a class="pagination__btn btn" href="#">вперёд</a>
       </nav>
     </div>
+  </div>
   </main>
   <footer class="footer">
     <ul class="footer__user-menu">
