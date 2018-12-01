@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
   <link rel="stylesheet" href="css/main.css">
   <title>HTML Academy: Девайс</title>
 </head>
 
 <body>
   <header class="header">
-    <a class="header__logo page-logo" href="index.html">device</a>
+    <a class="header__logo page-logo" href="index.html">
+      <span class="header__logo--hover">device</span>
+    </a>
     <ul class="header__user-menu user-menu">
       <li class="header__user-menu-item header__user-menu-item--search">
         <label class="visually-hidden" for="header__search">поиск</label>
@@ -132,13 +133,13 @@
         <h2 class="sort__title">сортировка:</h2>
         <ul class="sort__list sort__list--by">
           <li class="sort__item">
-            <a class="sort__link" href="#"> <span class="visually-hidden"> По цене </span></a>
+            <a class="sort__link" href="#">По цене</a>
           </li>
           <li class="sort__item">
-            <a class="sort__link" href="#"> <span class="visually-hidden"> По типу </span></a>
+            <a class="sort__link" href="#">По типу</a>
           </li>
           <li class="sort__item">
-            <a class="sort__link" href="#"> <span class="visually-hidden"> По популярности </span></a>
+            <a class="sort__link" href="#">По популярности</a>
           </li>
         </ul>
         <ul class="sort__list sort__list--triangles">
@@ -191,10 +192,10 @@
         </article>
       </div>
       <nav class="pagination">
-        <a class="pagination__btn btn" href="#">назад</a>
+        <a class="pagination__btn btn pagination__btn--back" href="#">назад</a>
         <ul class="pagination__list">
           <li class="pagination__item">
-            <a class="pagination__link" href="#">1</a>
+            <a class="pagination__link active" href="#">1</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="#">2</a>
@@ -203,7 +204,7 @@
             <a class="pagination__link" href="#">3</a>
           </li>
         </ul>
-        <a class="pagination__btn btn" href="#">вперёд</a>
+        <a class="pagination__btn btn pagination__btn--forward" href="#">вперёд</a>
       </nav>
     </div>
   </div>
