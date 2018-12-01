@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Open Sans,  Arial, sans-serif;
   font-size: 15px;
   letter-spacing: 0.15px;
   font-weight: 300;
@@ -43,7 +43,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #464646;
+  color: #000000;
 }
 
 li {
@@ -75,7 +75,7 @@ li {
 }
 
 .page-logo {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   color: #000000;
   font-weight: 600;
@@ -96,7 +96,7 @@ li {
 .menu__list {
   display: flex;
   justify-content: space-between;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-weight: 600;
   letter-spacing: 3.6px;
@@ -301,7 +301,7 @@ li {
 
 .slider__title {
   font-size: 47px;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   letter-spacing: 0.17px;
   line-height: 56px;
@@ -325,7 +325,7 @@ li {
 
 .slider__tr--first {
   font-size: 36px;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   letter-spacing: 0.36px;
   line-height: 48px;
@@ -339,7 +339,7 @@ li {
 
 /*categories*/
 .category__list {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight: 600;
@@ -350,7 +350,7 @@ li {
 /*services*/
 
 .services__title {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 600;
@@ -365,7 +365,7 @@ li {
 }
 
 .info__title {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   line-height: 48px;
   letter-spacing: 0.21px;
@@ -378,7 +378,7 @@ li {
 
 .info__list {
   line-height: 40px;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-weight: 600;
 }
@@ -398,7 +398,7 @@ li {
 }
 
 .btn {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-weight: 600;
   font-size: 18px;
@@ -488,7 +488,7 @@ li {
   padding: 0;
   flex-basis: 423px;
   justify-content: space-around;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-weight: 600;
   line-height: 24px;
@@ -514,7 +514,7 @@ li {
 /*catalog main*/
 
 .main__title {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 600;
@@ -566,7 +566,7 @@ li {
 .filter__title {
   background: #dbdbdb;
   margin: 0;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-size: 16px;
   font-weight: 600;
@@ -584,7 +584,7 @@ li {
 }
 
 .sort__title {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-size: 16px;
   font-weight: 600;
@@ -609,7 +609,7 @@ li {
 }
 
 .filter__name {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight: 600;
@@ -639,7 +639,7 @@ li {
 }
 
 .catalog__title {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight: 600;
@@ -657,7 +657,7 @@ li {
 }
 
 .pagination__item {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-size: 16px;
   font-weight: 600;
