@@ -38,7 +38,10 @@ body {
   font-weight: 300;
   line-height: 30px;
   color: #464646;
-  ;
+  box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
 }
 
 a {
@@ -357,6 +360,13 @@ li {
   line-height: 48px;
   letter-spacing: 0.21px;
 }
+/*partners*/
+
+.partners__list{
+display: flex;
+padding: 0;
+justify-content: space-between;
+}
 
 /*info*/
 .info {
@@ -385,16 +395,6 @@ li {
 
 .info__item {
   list-style-type: circle;
-}
-
-.info__about {
-  min-width: 50%;
-  padding-right: 63px
-}
-
-.info__contact {
-  min-width: 50%;
-  padding-left: 63px;
 }
 
 .btn {
@@ -519,10 +519,8 @@ li {
   font-size: 47px;
   font-weight: 600;
   line-height: 48px;
+  margin-left: 230px;
   letter-spacing: 0.17px;
-  margin-left: 200px;
-  width: 83.393242272%;
-  max-width: 1160px;
   box-sizing: border-box;
 }
 
@@ -603,9 +601,9 @@ li {
 }
 
 .filter {
-  width: 41%;
-  max-width: 468px;
+  width: 32.5%;
   background: #efefef;
+
 }
 
 .filter__name {
@@ -620,22 +618,24 @@ li {
 .wrapper {
   display: flex;
   flex-direction: column;
+  width: 67.5%;
+  padding-bottom: 100px;
 }
 
 .catalog {
   display: flex;
   flex-wrap: wrap;
-  padding: 69px 72px;
-  justify-content: center;
+  margin: 70px -40px 0 72px;
+  width: 800px;
 }
 
 .catalog__item {
-  padding-right: 40px;
-  padding-bottom: 126px;
+  padding-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 360px;
   justify-content: space-between;
+  margin-right: 40px;
 }
 
 .catalog__title {
@@ -654,6 +654,7 @@ li {
   align-items: center;
   width: 760px;
   background: #ebebeb;
+  margin-left: 72px;
 }
 
 .pagination__item {
