@@ -31,27 +31,35 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item menu__item--catalog">
-          <a class="menu__link menu__link--catalog">каталог товаров</a>
-          <ul class="menu__dropdown">
-            <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="#">Квадрокоптеры</a>
-            </li>
-            <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="catalog.html">Моноподы для селфи</a>
-            </li>
-            <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="#">Умные часы</a>
-            </li>
-            <li class="menu__dropdown-item">
-              <a class="menu__dropdown-link" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
+          <div class="drop">
+            <a class="menu__link menu__link--catalog">каталог товаров</a>
+            <ul class="menu__dropdown-block">
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
         </li>
         <li class="menu__item menu__item--delivery">
           <a class="menu__link" href="#">Доставка</a>
@@ -222,7 +230,9 @@
         <h2 class="info__title">Контакты</h2>
         <p class="info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
-        <img class="info__map" src="img/content/map.jpg">
+        <a href="https://yandex.ru/maps">
+          <img class="info__map" src="img/content/map.jpg">
+        </a>
         <a class="info-btn btn">напишите нам</a>
       </div>
     </section>
