@@ -98,9 +98,11 @@ button {
   font-weight: 600;
   font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 3.6px;
   z-index: 2;
-  padding: 0 25px;
+  padding: 0 6.9%;
+  min-width: 250px;
+  max-width: 560px;
 }
 
 .btn::before {
@@ -128,9 +130,13 @@ button {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 0 60px 0 60px;
+  padding: 0 60px 0 58px;
   margin-top: 40px;
   box-sizing: border-box;
+}
+
+.header--catalog{
+  height: 186px ;
 }
 
 .header__logo {
@@ -158,10 +164,6 @@ button {
   color: #000000;
 }
 
-.menu{
-  height: 60%;
-}
-
 .menu__list {
   display: flex;
   font-family: Gilroy, Arial, sans-serif;
@@ -170,7 +172,6 @@ button {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   font-size: 18px;
-  padding-top: 4px;
   width: 100%;
   margin-bottom: 0;
 }
@@ -242,7 +243,7 @@ button {
   background-size: 12px 12px;
   height: 12px;
   width: 12px;
-  margin-right: 11px;
+  margin-right: 8px;
 }
 
 .menu__link--catalog::after {
@@ -259,8 +260,24 @@ button {
 .menu__dropdown-block{
   display: none;
   justify-content: space-between;
+  z-index: 10;
+  position: relative;
+  background: #f8e296;
+  min-height: 158px;
+  padding-left: 59px;
+  right: 60px;
+  width: 600px;
 }
 
+.menu__dropdown-block::after{
+  content: "";
+  display: flex;
+  width: 560px;
+  position: absolute;
+  background: #f8e296;
+  height: 158px;
+  margin-left: 541px;
+}
 .menu__dropdown {
   display: flex;
   flex-direction: column;
@@ -270,6 +287,10 @@ button {
   line-height: 36px;
   letter-spacing: 0.15px;
   text-transform: none;
+}
+
+.drop{
+  position: absolute;
 }
 
 .drop:hover .menu__dropdown-block{
@@ -409,9 +430,9 @@ button {
   font-size: 47px;
   font-family: Gilroy, Arial, sans-serif;
   color: #000000;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.59px;
   line-height: 56px;
-  width: 391px;
+  width: 400px;
   padding-top: 79px;
   margin: 0;
 }
@@ -419,7 +440,6 @@ button {
 .slider__text {
   padding: 0;
   margin-top: 19px;
-  margin-bottom: 18px;
 }
 
 .slider__content {
@@ -430,7 +450,7 @@ button {
 }
 
 .slider-btn-container {
-  margin-top: 29px;
+  margin-top: 5px;
 }
 
 .slider__table {
@@ -484,7 +504,7 @@ button {
   font-size: 47px;
   font-weight: 600;
   line-height: 48px;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.59px;
 }
 
 /*partners*/
@@ -503,7 +523,7 @@ button {
 }
 
 .info__about {
-  width: 462px;
+  width: 486px;
   position: relative;
 }
 
@@ -530,14 +550,15 @@ button {
   font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   line-height: 48px;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.59px;
   font-size: 47px;
   margin-top: 51px;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 }
 
 .info__text {
   margin-top: 31px;
+  letter-spacing: -0.2px;
 }
 
 .info__list {
@@ -545,15 +566,15 @@ button {
   font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-weight: 600;
-  padding-left: 37px;
-  margin-top: 36px;
+  padding-left: 35px;
+  margin-top: 65px;
   margin-bottom: 59px;
-  padding-inline-start: 0;
+  padding-inline-start: 15px;
 }
 
 .info__item {
   list-style-image: url(../img/content/slider-button.png);
-  padding-left: 36px;
+  padding-left: 21px;
 }
 
 /*footer*/
@@ -581,7 +602,7 @@ button {
 }
 
 .footer__user-menu-item {
-  padding-left: 43px;
+  padding-left: 40px;
 }
 
 .footer__user-menu-item--search {
@@ -607,7 +628,7 @@ button {
   background-size: 10px 10px;
   height: 10px;
   width: 10px;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .user-link--basket:before {
@@ -617,7 +638,7 @@ button {
   background-size: 12px 12px;
   height: 12px;
   width: 12px;
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 .footer__info-block {
@@ -630,11 +651,16 @@ button {
 }
 
 .footer__info-address {
-  width: 33.33%;
+  width: 31.33%;
+  padding-top: 1px;
 }
 
-.footer__info-item:nth-child(even) {
-  padding: 0 28px;
+.footer__info-item{
+  padding-right: 35px;
+}
+
+.footer__info-item:last-child{
+  padding: 0;
 }
 
 .footer__info-link {
@@ -646,24 +672,24 @@ button {
   display: flex;
   padding: 0;
   flex-basis: 423px;
-  justify-content: space-around;
   font-family: Gilroy, Arial, sans-serif;
   color: #000000;
   font-weight: 600;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 3.6px;
-  width: 33.33%;
+  letter-spacing: 3.4px;
   padding-top: 7px;
+  margin-left: 16px;
 }
 
 .footer__info-tel {
-  width: 33.33%;
+  width: 32.33%;
   text-align: end;
+  letter-spacing: -0.2px;
 }
 
 .socials {
-  padding-top: 45px;
+  padding-top: 47px;
   display: flex;
 }
 
@@ -673,6 +699,7 @@ button {
   margin-left: auto;
   position: relative;
   width: 10%;
+  padding-left: 2px;
 }
 
 .footer__socials::before {
@@ -681,7 +708,7 @@ button {
   width: 80px;
   height: 7px;
   background-color: #ffc600;
-  top: 40%;
+  top: 32%;
   right: 544px;
 }
 
@@ -714,17 +741,23 @@ button {
   font-size: 47px;
   font-weight: 600;
   line-height: 48px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.59px;
   box-sizing: border-box;
+  margin-left: 60px;
+  margin-top: 36px;
+  margin-bottom: 20px;
 }
 
 .nav__list {
   display: flex;
   padding: 0;
+  margin-left: 60px;
+  letter-spacing: -1px;
 }
 
 .nav__link {
   opacity: 0.3;
+  margin-right: 14px;
 }
 
 .nav__item--arrow::after {
@@ -734,20 +767,12 @@ button {
   background-size: 4px 7px;
   width: 4px;
   height: 7px;
-  margin: 0 10px;
+  margin-right: 20px;
 }
 
 /*filter*/
 .main-catalog {
   width: 100%;
-}
-
-.sort {
-  display: flex;
-  background: #efefef;
-  display: flex;
-  align-items: center;
-  padding-left: 72px;
 }
 
 .filter__title::before{
@@ -758,6 +783,10 @@ button {
 
 .page-wrapper {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 29px;
+  width: 100%;
 }
 
 .filter__title {
@@ -773,12 +802,35 @@ button {
   height: 70px;
   display: flex;
   align-items: center;
-  padding-left: 59px;
+  padding-left: 61px;
   letter-spacing: 3.91px;
+  width: 329px;
 }
 
-.sort {
+.filter-container{
+  width: 1160px;
+  display: flex;
+}
+
+.sort{
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right,#dcdcdc,#dcdcdc 50%,#ebebeb 50%,#ebebeb);
+}
+
+.sort-container{
+  width: 1160px;
+  display: flex;
+}
+
+.sort-settings {
   height: 70px;
+  display: flex;
+  background: #ebebeb;
+  display: flex;
+  align-items: center;
+  padding-left: 71px;
+  width: 831px;
 }
 
 .sort__title {
@@ -793,15 +845,15 @@ button {
 
 .sort__list {
   display: flex;
-  margin-left: 45px;
+  margin-left: 47px;
 }
 
 .sort__list--triangles {
   margin-left: auto;
 }
 
-.sort__item:first-child {
-  margin-right: 18px;
+.sort__item{
+  letter-spacing: -0.2px;
 }
 
 .sort__link--triangle {
@@ -809,14 +861,24 @@ button {
 }
 
 .sort__link {
-  margin-right: 30px;
+  margin-right: 26px;
   opacity: 0.3;
 }
 
+.sort__item-tr:first-child{
+  padding-right: 17px;
+}
+
 .filter {
-  width: 326px;
+  width: 329px;
   background: #efefef;
 
+}
+
+.filter-wrapper{
+ display: flex;
+ justify-content: center;
+ background-image: linear-gradient(to right,#efefef,#efefef 50%,#fff 50%,#fff);
 }
 
 .filter__name {
@@ -833,6 +895,7 @@ button {
   flex-direction: column;
   width: 830px;
   padding-bottom: 77px;
+  background: #fff;
 }
 
 .catalog {
@@ -883,7 +946,7 @@ button {
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
-  letter-spacing: 0.18px;
+  letter-spacing: 0.59px;
   width: 280px;
 }
 
@@ -894,7 +957,7 @@ button {
   width: 760px;
   background: #ebebeb;
   margin-left: 72px;
-  margin-top: 10px;
+  margin-top: -9px;
   height: 69px;
 }
 
@@ -947,7 +1010,7 @@ button {
 
 .pagination__btn {
   padding: 0 30px;
-  height: 54px;
+  height: 69px;
   display: flex;
   align-items: center;
 }

@@ -10,7 +10,7 @@
 
 <body>
   <div class="catalog-wrapper">
-    <header class="header">
+    <header class="header header--catalog">
       <a class="header__logo page-logo" href="index.html">
         <span class="header__logo--hover">device</span>
       </a>
@@ -89,9 +89,42 @@
           </li>
         </ul>
       </nav>
+    </div>
       <div class="page-wrapper">
+        <div class="sort">
+          <div class="sort-container">
+            <h2 class="filter__title">фильтр:</h2>
+            <div class="sort-settings">
+                <h2 class="sort__title">сортировка:</h2>
+                <ul class="sort__list sort__list--by">
+                  <li class="sort__item">
+                    <a class="sort__link" href="#">По цене</a>
+                  </li>
+                  <li class="sort__item">
+                    <a class="sort__link" href="#">По типу</a>
+                  </li>
+                  <li class="sort__item">
+                    <a class="sort__link" href="#">По популярности</a>
+                  </li>
+                </ul>
+                <ul class="sort__list sort__list--triangles">
+                  <li class="sort__item-tr">
+                    <a class="sort__link--triangle" href="#">
+                      <img src="img/svg/icon-up-dir.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="sort__item-tr">
+                    <a class="sort__link--triangle" href="#">
+                      <img src="img/svg/icon-down-dir.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="filter-wrapper">
+          <div class="filter-container">
         <section class="filter">
-          <h2 class="filter__title">фильтр:</h2>
           <form action="https://echo.htmlacademy.ru" method="post" class="filter__form">
             <fieldset>
               <legend class="filter__name">Стоимость</legend>
@@ -138,32 +171,6 @@
           </form>
         </section>
         <div class="wrapper">
-          <div class="sort">
-            <h2 class="sort__title">сортировка:</h2>
-            <ul class="sort__list sort__list--by">
-              <li class="sort__item">
-                <a class="sort__link" href="#">По цене</a>
-              </li>
-              <li class="sort__item">
-                <a class="sort__link" href="#">По типу</a>
-              </li>
-              <li class="sort__item">
-                <a class="sort__link" href="#">По популярности</a>
-              </li>
-            </ul>
-            <ul class="sort__list sort__list--triangles">
-              <li class="sort__item">
-                <a class="sort__link--triangle" href="#">
-                  <img src="img/svg/icon-up-dir.svg" alt="">
-                </a>
-              </li>
-              <li class="sort__item">
-                <a class="sort__link--triangle" href="#">
-                  <img src="img/svg/icon-down-dir.svg" alt="">
-                </a>
-              </li>
-            </ul>
-          </div>
           <div class="catalog">
             <article class="catalog__item">
               <img class="catalog__img" src="img/content/item-1.png" height="380px" width="360px" alt="product">
@@ -243,8 +250,10 @@
           </nav>
         </div>
       </div>
+      </div>
+      </div>
     </main>
-  </div>
+  
   <footer class="footer">
     <div class="footer-wrapper">
       <ul class="footer__user-menu">
@@ -262,7 +271,7 @@
         </li>
       </ul>
       <div class="footer__info-block">
-        <p class="footer__info-address"> г. Москва, ул. Строителей, 15</p>
+        <p class="footer__info-address"> г. Москва,ул.Строителей,15</p>
         <ul class="footer__info-list">
           <li class="footer__info-item">
             <a class="footer__info-link" href="#">Доставка</a>
