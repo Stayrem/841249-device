@@ -929,11 +929,12 @@ button {
   visibility: hidden;
   position: absolute;
   top: 35%;
-  left: 27%;
+  left: 17%;
 }
 
 .catalog__compare {
   display: block;
+  text-align: center;
 }
 
 .catalog__item:hover .catalog__hidden {
