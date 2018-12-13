@@ -126,7 +126,7 @@
           <div class="filter-container">
         <section class="filter">
           <form action="https://echo.htmlacademy.ru" method="post" class="filter__form">
-            <fieldset>
+            <fieldset class="filter__field">
               <legend class="filter__name">Стоимость</legend>
               <div class="filter__price">
                 <div class="filter__price-point"></div>
@@ -134,37 +134,47 @@
                 <div class="filter__price-point"></div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter__field">
               <legend class="filter__name">Цвет</legend>
-              <ul>
-                <li>
-                  <input checked type="checkbox" name="black" id="color__black">
-                  <label for="color__black">Чёрный</label></li>
-                <li>
-                  <input type="checkbox" name="white" id="color__white">
-                  <label for="color__white">Белый </label>
+              <ul class="filter__list">
+                <li class="filter__list-item">
+                  <input class="checkbox visually-hidden" checked type="checkbox" name="black" id="color__black">
+                  <span class="checkbox-indicator"></span>
+                  <label class="checkbox-label" for="color__black">Чёрный</label></li>
+                <li class="filter__list-item">
+                  <input class="checkbox visually-hidden" type="checkbox" name="white" id="color__white">
+                  <span class="checkbox-indicator"></span>
+                  <label class="checkbox-label" for="color__white">Белый </label>
                 </li>
-                <li>
-                  <input checked type="checkbox" name="blue" id="color__blue">
-                  <label for="color__blue">Синий</label>
+                <li class="filter__list-item">
+                  <input class="checkbox visually-hidden" checked type="checkbox" name="blue" id="color__blue">
+                  <span class="checkbox-indicator"></span>
+                  <label class="checkbox-label" for="color__blue">Синий</label>
                 </li>
-                <li>
-                  <input checked type="checkbox" name="red" id="color__red">
-                  <label for="color__red">Красный</label>
+                <li class="filter__list-item">
+                  <input class="checkbox visually-hidden" checked type="checkbox" name="red" id="color__red">
+                  <span class="checkbox-indicator"></span>
+                  <label class="checkbox-label" for="color__red">Красный</label>
                 </li>
-                <li><input type="checkbox" name="pink" id="color__pink">
-                  <label for="color__pink">Розовый</label></li>
+                <li class="filter__list-item">
+                  <input class="checkbox visually-hidden" type="checkbox" name="pink" id="color__pink">
+                  <span class="checkbox-indicator"></span>
+                  <label class="checkbox-label" for="color__pink">Розовый</label></li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter__field">
               <legend class="filter__name">Bluetooth</legend>
-              <ul>
-                <li>
-                  <input checked value="yes" type="radio" name="bluetooth" id="radio__yes">
-                  <label for="radio__yes">Есть</label></li>
-                <li>
-                  <input value="no" type="radio" name="bluetooth" id="radio__no">
-                  <label for="radio__no">Нет</label></li>
+              <ul class="radio__list">
+                <li class="radio__list-item">
+                  <input class="visually-hidden" checked value="yes" type="radio" name="bluetooth" id="radio__yes">
+                  <span  class="radio-indicator"></span>
+                  <label class="radio-label" for="radio__yes">Есть</label>
+                </li>
+                <li class="radio__list-item">
+                  <input class="visually-hidden" value="no" type="radio" name="bluetooth" id="radio__no">
+                  <span class="radio-indicator"></span>
+                  <label  class="radio-label" for="radio__no">Нет</label>
+                </li>
               </ul>
             </fieldset>
             <button class="filter-btn btn" type="submit">показать</button>

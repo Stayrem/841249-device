@@ -56,7 +56,7 @@ a {
   color: #000000;
 }
 
-a.btn{
+a.btn {
   padding-top: 4px;
   padding-bottom: 4px;
 }
@@ -65,19 +65,90 @@ li {
   list-style-type: none;
 }
 
-fieldset {
+.filter__field {
   border: none;
+  margin-bottom: 28px;
 }
 
-fieldset::before {
+.filter__field:last-child{
+  padding-bottom: 0;
+}
+
+.filter__name::before {
   content: "";
   width: 200px;
   height: 2px;
   background-color: #000;
   position: absolute;
-
+  bottom: 34px;
 }
 
+.filter-btn{
+  min-width: 200px !important;
+}
+
+/*checkboxes and radio*/
+.filter__list {
+  margin-top: 17px;
+  margin-bottom: 0;
+}
+
+.filter__list-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.filter__list-item input[type="checkbox"]:checked+.checkbox-indicator {
+  outline: 5px auto -webkit-focus-ring-color;
+  background: url(../img/svg/checkbox-on.svg) no-repeat;
+}
+
+.checkbox-label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 38px;
+  letter-spacing: -0.9px;
+}
+
+.checkbox-indicator {
+  background: url(../img/svg/checkbox-off.svg) no-repeat;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 3px;
+}
+
+.radio-label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 38px;
+  letter-spacing: -0.9px;
+}
+
+.radio__list-item {
+  position: relative;
+}
+
+.radio__list-item:first-child {
+  margin-bottom: 13px;
+}
+
+.radio-indicator {
+  background: url(../img/svg/radio-off.svg) no-repeat;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 3px;
+}
+
+.radio__list-item input[type="radio"]:checked+.radio-indicator {
+  outline: 5px auto -webkit-focus-ring-color;
+  background: url(../img/svg/radio-on.svg) no-repeat;
+}
+
+/*-*/
 button {
   padding: 0;
   border: none;
@@ -88,7 +159,11 @@ button {
 }
 
 .visually-hidden {
-  display: none !important;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .btn {
@@ -135,8 +210,8 @@ button {
   box-sizing: border-box;
 }
 
-.header--catalog{
-  height: 186px ;
+.header--catalog {
+  height: 186px;
 }
 
 .header__logo {
@@ -160,15 +235,15 @@ button {
   width: 100%;
 }
 
-.user-menu--modify{
+.user-menu--modify {
   margin-top: 13px;
 }
 
-.login{
+.login {
   letter-spacing: -0.2px;
 }
 
-.login::after{
+.login::after {
   content: "Войти";
   margin-left: 21px;
 }
@@ -270,7 +345,7 @@ button {
   opacity: 0.3;
 }
 
-.menu__dropdown-block{
+.menu__dropdown-block {
   display: none;
   justify-content: space-between;
   z-index: 10;
@@ -282,7 +357,7 @@ button {
   width: 600px;
 }
 
-.menu__dropdown-block::after{
+.menu__dropdown-block::after {
   content: "";
   display: flex;
   width: 560px;
@@ -291,6 +366,7 @@ button {
   height: 163px;
   margin-left: 541px;
 }
+
 .menu__dropdown {
   display: flex;
   flex-direction: column;
@@ -302,19 +378,19 @@ button {
   text-transform: none;
 }
 
-.drop{
+.drop {
   position: absolute;
 }
 
-.drop:hover .menu__dropdown-block{
+.drop:hover .menu__dropdown-block {
   display: flex;
 }
 
-.drop:hover header{
+.drop:hover header {
   z-index: 100;
 }
 
-.drop:hover{
+.drop:hover {
   height: 150px;
 }
 
@@ -590,11 +666,11 @@ button {
   padding-left: 21px;
 }
 
-.about-btn{    
-padding: 0 24px;
+.about-btn {
+  padding: 0 24px;
 }
 
-.info-btn{
+.info-btn {
   padding: 0 42px;
 }
 
@@ -676,11 +752,11 @@ padding: 0 24px;
   padding-top: 1px;
 }
 
-.footer__info-item{
+.footer__info-item {
   padding-right: 35px;
 }
 
-.footer__info-item:last-child{
+.footer__info-item:last-child {
   padding: 0;
 }
 
@@ -796,7 +872,7 @@ padding: 0 24px;
   width: 100%;
 }
 
-.filter__title::before{
+.filter__title::before {
   content: "";
   background-color: #dbdbdb;
   display: block;
@@ -828,18 +904,18 @@ padding: 0 24px;
   width: 329px;
 }
 
-.filter-container{
+.filter-container {
   width: 1160px;
   display: flex;
 }
 
-.sort{
+.sort {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to right,#dcdcdc,#dcdcdc 50%,#ebebeb 50%,#ebebeb);
+  background-image: linear-gradient(to right, #dcdcdc, #dcdcdc 50%, #ebebeb 50%, #ebebeb);
 }
 
-.sort-container{
+.sort-container {
   width: 1160px;
   display: flex;
 }
@@ -873,7 +949,7 @@ padding: 0 24px;
   margin-left: auto;
 }
 
-.sort__item{
+.sort__item {
   letter-spacing: -0.2px;
 }
 
@@ -886,20 +962,24 @@ padding: 0 24px;
   opacity: 0.3;
 }
 
-.sort__item-tr:first-child{
+.sort__item-tr:first-child {
   padding-right: 17px;
 }
 
 .filter {
   width: 329px;
   background: #efefef;
+  margin-top: 81px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 82px;
 
 }
 
-.filter-wrapper{
- display: flex;
- justify-content: center;
- background-image: linear-gradient(to right,#efefef,#efefef 50%,#fff 50%,#fff);
+.filter-wrapper {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, #efefef, #efefef 50%, #fff 50%, #fff);
 }
 
 .filter__name {
@@ -909,6 +989,7 @@ padding: 0 24px;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.18px;
+  position: relative;
 }
 
 .wrapper {
@@ -972,7 +1053,7 @@ padding: 0 24px;
   width: 280px;
 }
 
-.catalog__price{
+.catalog__price {
   margin-top: -4px;
   letter-spacing: 0.2px;
 }
@@ -1054,10 +1135,9 @@ padding: 0 24px;
 /*write-us*/
 .write-us {
   width: 960px;
-  height: 553px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
-  position: absolute;
-  top: 40%;
+  position: fixed;
+  top: 25%;
   background: #fff;
   z-index: 999;
 }
@@ -1067,30 +1147,35 @@ padding: 0 24px;
   color: #000000;
   font-weight: 600;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 2px;
   display: flex;
   flex-direction: column;
   width: 360px;
   width: 50%;
+  padding-bottom: 13px;
 }
 
-.write-us__text {
-  font-family: Gilroy, Arial, sans-serif;
-  color: #000000;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.write-us__name,
+.write-us__mail {
+  height: 50px;
+  background: #f2f2f2;
+  border-style: none;
+  padding: 0 20px;
 }
 
 .write-us__area {
   width: 100%;
 }
 
+.write-us__text-area {
+  width: 100%;
+  background: #f2f2f2;
+  border-style: none;
+  padding: 18px 20px;
+}
+
 .write-us__form {
-  padding: 100px 100px 0 100px;
+  padding: 100px 100px 100px 100px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1118,16 +1203,14 @@ padding: 0 24px;
   opacity: 0.3;
 }
 
-input {
-  width: 100%;
-}
+
 
 .write-us__title:first-child {
   padding-right: 40px;
 }
 
 .map {
-  position: absolute;
+  position: fixed;
   bottom: 13%;
   z-index: 10;
 }
