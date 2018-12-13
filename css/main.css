@@ -96,6 +96,23 @@ li {
 .filter__list-item {
   position: relative;
   margin-bottom: 10px;
+  width: 85px;
+}
+
+.filter__list-item:hover{
+  opacity: 0.6;
+}
+
+.filter__list-item:focus{
+  opacity: 0.3;
+}
+
+.radio__list-item:hover{
+  opacity: 0.6;
+}
+
+.radio__list-item:focus{
+  opacity: 0.3;
 }
 
 .filter__list-item input[type="checkbox"]:checked+.checkbox-indicator {
@@ -128,6 +145,7 @@ li {
 
 .radio__list-item {
   position: relative;
+  width: 100px;
 }
 
 .radio__list-item:first-child {
@@ -239,13 +257,9 @@ button {
   margin-top: 13px;
 }
 
-.login {
-  letter-spacing: -0.2px;
-}
-
-.login::after {
-  content: "Войти";
-  margin-left: 21px;
+.login{
+  opacity: 0.3;
+  margin-left: 20px;
 }
 
 .header__user-menu-item {
@@ -402,11 +416,11 @@ button {
   opacity: 0.3;
 }
 
-.header__user-menu-item:hover {
+.header__user-link:hover {
   opacity: 0.6;
 }
 
-.header__user-menu-item:active {
+.header__user-link:active {
   opacity: 0.3;
 }
 
