@@ -71,6 +71,10 @@ li {
 }
 
 .filter__field:last-child{
+  margin-bottom: 20px;
+}
+
+.filter__field:last-child {
   padding-bottom: 0;
 }
 
@@ -83,10 +87,13 @@ li {
   bottom: 34px;
 }
 
-.filter-btn{
+.filter-btn {
   min-width: 200px !important;
 }
 
+.mb{
+  margin-bottom: 17px;
+}
 /*checkboxes and radio*/
 .filter__list {
   margin-top: 17px;
@@ -99,25 +106,40 @@ li {
   width: 85px;
 }
 
-.filter__list-item:hover{
+.checkbox-label:hover {
   opacity: 0.6;
 }
 
-.filter__list-item:focus{
+.checkbox-label:active {
   opacity: 0.3;
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
-.radio__list-item:hover{
+.checkbox-label:disabled{
+  color: #a6a6a6;
+}
+
+.radio-label:hover {
   opacity: 0.6;
 }
 
-.radio__list-item:focus{
+.radio-label:active {
   opacity: 0.3;
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
-.filter__list-item input[type="checkbox"]:checked+.checkbox-indicator {
-  outline: 5px auto -webkit-focus-ring-color;
-  background: url(../img/svg/checkbox-on.svg) no-repeat;
+.radio-label:disabled{
+  color: #a6a6a6;
+}
+
+.checkbox-label::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url(../img/svg/checkbox-off.svg) no-repeat;
+  top: 0;
 }
 
 .checkbox-label {
@@ -127,19 +149,19 @@ li {
   letter-spacing: -0.9px;
 }
 
-.checkbox-indicator {
-  background: url(../img/svg/checkbox-off.svg) no-repeat;
+input[type="checkbox"]:checked + .checkbox-label::before{
+  content: "";
   display: flex;
+  position: absolute;
   width: 24px;
   height: 24px;
-  position: absolute;
-  bottom: 3px;
+  background: url(../img/svg/checkbox-on.svg) no-repeat;
 }
 
 .radio-label {
   position: relative;
   cursor: pointer;
-  padding-left: 38px;
+  margin-left: 38px;
   letter-spacing: -0.9px;
 }
 
@@ -148,23 +170,29 @@ li {
   width: 100px;
 }
 
+.radio-label::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url(../img/svg/radio-off.svg) no-repeat;
+  top: 0;
+}
+
+input[type="radio"]:checked + .radio-label::before{
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url(../img/svg/radio-on.svg) no-repeat;
+}
+
 .radio__list-item:first-child {
   margin-bottom: 13px;
 }
 
-.radio-indicator {
-  background: url(../img/svg/radio-off.svg) no-repeat;
-  display: flex;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  bottom: 3px;
-}
-
-.radio__list-item input[type="radio"]:checked+.radio-indicator {
-  outline: 5px auto -webkit-focus-ring-color;
-  background: url(../img/svg/radio-on.svg) no-repeat;
-}
 
 /*-*/
 button {
@@ -257,7 +285,7 @@ button {
   margin-top: 13px;
 }
 
-.login{
+.login {
   opacity: 0.3;
   margin-left: 20px;
 }
@@ -1154,6 +1182,7 @@ button {
   top: 25%;
   background: #fff;
   z-index: 999;
+  left: calc(50%-480px);
 }
 
 .write-us__title {
@@ -1165,8 +1194,8 @@ button {
   display: flex;
   flex-direction: column;
   width: 360px;
-  width: 50%;
-  padding-bottom: 13px;
+  padding-bottom: 17px;
+  letter-spacing: 0.4px;
 }
 
 .write-us__name,
@@ -1174,31 +1203,74 @@ button {
   height: 50px;
   background: #f2f2f2;
   border-style: none;
-  padding: 0 20px;
+  font-size: 14px; 
+  padding: 0 23px;
+  letter-spacing: 0.25px;
+}
+
+.write-us__name:hover {
+  opacity: 0.8;
+}
+
+.write-us__name:focus {
+  opacity: 0.5;
+  border: 3px solid #f0c52e;
+}
+
+.write-us__mail:hover {
+  opacity: 0.8;
+}
+
+.write-us__mail:focus {
+  opacity: 0.5;
+  border: 3px solid #f0c52e;
+}
+
+.write-us__text-area:hover {
+  opacity: 0.8;
+}
+
+.write-us__text-area:focus {
+  opacity: 0.5;
+  border: 3px solid #f0c52e;
 }
 
 .write-us__area {
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
 
 .write-us__text-area {
   width: 100%;
+  height: 160px;
   background: #f2f2f2;
   border-style: none;
   padding: 18px 20px;
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #464646;
 }
 
 .write-us__form {
-  padding: 100px 100px 100px 100px;
+  padding: 88px 100px 80px 100px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .btn__close {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 25px;
+  top: 24px;
   opacity: 0.5;
+}
+
+.write-us-btn-submit{
+  min-width: 199px;
 }
 
 .btn__close:hover {
@@ -1217,10 +1289,8 @@ button {
   opacity: 0.3;
 }
 
-
-
-.write-us__title:first-child {
-  padding-right: 40px;
+.write-us__title:last-child {
+  padding-left: 40px;
 }
 
 .map {
