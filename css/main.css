@@ -42,6 +42,12 @@ body {
   position: relative;
 }
 
+.catalog-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 * {
   box-sizing: inherit;
 
@@ -63,6 +69,10 @@ a.btn {
 
 li {
   list-style-type: none;
+}
+
+.filter__form{
+  width: 200px;
 }
 
 .filter__field {
@@ -88,7 +98,8 @@ li {
 }
 
 .filter-btn {
-  min-width: 200px !important;
+  min-width: 200px;
+  margin-left: 13px;
 }
 
 .mb {
@@ -155,8 +166,9 @@ input[type="checkbox"]:checked+.checkbox-label::before {
   content: "";
   display: flex;
   position: absolute;
-  width: 24px;
+  width: 26px;
   height: 24px;
+  background-size: contain;
   background: url(../img/svg/checkbox-on.svg) no-repeat;
 }
 
@@ -189,6 +201,7 @@ input[type="radio"]:checked+.radio-label::before {
   position: absolute;
   width: 25px;
   height: 25px;
+  background-size: contain;
   background: url(../img/svg/radio-on.svg) no-repeat;
 }
 
@@ -225,7 +238,6 @@ button {
   letter-spacing: 3.6px;
   z-index: 2;
   padding: 0 6.9%;
-  min-width: 250px;
   max-width: 560px;
 }
 
@@ -290,7 +302,7 @@ button {
 
 .login {
   opacity: 0.3;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .header__user-menu-item {
@@ -514,6 +526,10 @@ button {
   top: 28px;
 }
 
+.catalog__btn{
+  min-width: 250px;
+}
+
 .catalog__item:hover .catalog__img {
   opacity: 0.7;
   transition: 0.5s
@@ -728,10 +744,12 @@ button {
 
 .about-btn {
   padding: 0 24px;
+  min-width: 250px;
 }
 
 .info-btn {
   padding: 0 42px;
+  min-width: 250px;
 }
 
 /*footer*/
@@ -900,16 +918,21 @@ button {
   line-height: 48px;
   letter-spacing: 0.59px;
   box-sizing: border-box;
-  margin-left: 60px;
+  padding-left: 60px;
   margin-top: 36px;
   margin-bottom: 20px;
+  width: 1160px;
+}
+.nav{
+  width: 1160px;
 }
 
 .nav__list {
   display: flex;
   padding: 0;
-  margin-left: 60px;
+  padding-left: 60px;
   letter-spacing: -1px;
+  margin-top: 0;
 }
 
 .nav__link {
@@ -1260,8 +1283,8 @@ button {
 }
 
 .write-us__name:focus {
-  opacity: 0.5;
-  border: 3px solid #f0c52e;
+  background-color: rgba(242, 242, 242, 0.5);
+  box-shadow: 0px 0px 0px 3px #f0c52e;
   color: #000;
 }
 
@@ -1280,8 +1303,8 @@ button {
 }
 
 .write-us__mail:focus {
-  opacity: 0.5;
-  border: 3px solid #f0c52e;
+  background-color: rgba(242, 242, 242, 0.5);
+  box-shadow: 0px 0px 0px 3px #f0c52e;
   color: #000;
 }
 
@@ -1295,8 +1318,8 @@ button {
 }
 
 .write-us__text-area:focus {
-  opacity: 0.5;
-  border: 3px solid #f0c52e;
+  background-color: rgba(242, 242, 242, 0.5);
+  box-shadow: 0px 0px 0px 3px #f0c52e;
   color: #000;
 }
 
@@ -1317,7 +1340,7 @@ button {
   letter-spacing: 0.15px;
   font-weight: 300;
   line-height: 30px;
-  color: #464646;
+  color: #000;
 }
 
 .write-us__form {
