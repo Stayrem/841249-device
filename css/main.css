@@ -493,7 +493,7 @@ button {
   position: absolute;
   background: #f8e296;
   height: 163px;
-  margin-left: 541px;
+  right: -560px;
 }
 
 .menu__dropdown {
@@ -982,7 +982,7 @@ button {
 
 .footer__info-tel {
   width: 32.33%;
-  text-align: end;
+  text-align: right;
   letter-spacing: -0.2px;
 }
 
@@ -1331,9 +1331,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
