@@ -347,6 +347,10 @@ button {
   color: #000000;
 }
 
+.menu{
+  margin-top: 16px;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,9 +369,9 @@ button {
   background: rgb(248, 226, 150);
   border: none;
   width: 441px;
-  height: 47px;
+  height: 30px;
   outline: none;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .header__search:focus{
@@ -386,8 +390,9 @@ button {
   margin-left: -4px;
   visibility: hidden;
   position: absolute;
-  right: 101px;
+  right: 100px;
   bottom: 0.5px;
+  background: #f8e296;
 }
 
 .header__btn:hover{
@@ -436,7 +441,8 @@ button {
     width: 16px;
     margin-right: 18px;
     position: absolute;
-    bottom: 15px;
+    bottom: 6px;
+    left: 4px;
 }
 
 .header__user-link--login:before {
