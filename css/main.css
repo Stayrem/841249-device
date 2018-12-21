@@ -274,7 +274,7 @@ button {
   height: 20%;
   background-color: #f0c52e;
   left: 0;
-  top: 40%;
+  top: 12px;
   z-index: -1;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -364,9 +364,10 @@ button {
 .header__search {
   background: rgb(248, 226, 150);
   border: none;
-  width: 356px;
+  width: 441px;
   height: 47px;
   outline: none;
+  padding-left: 30px;
 }
 
 .header__search:focus{
@@ -384,6 +385,9 @@ button {
   border: 2px solid #000000;
   margin-left: -4px;
   visibility: hidden;
+  position: absolute;
+  right: 101px;
+  bottom: 0.5px;
 }
 
 .header__btn:hover{
@@ -419,14 +423,20 @@ button {
   width: 24%;
 }
 
-.header__user-menu-item--search:before {
-  display: inline-block;
-  content: ' ';
-  background-image: url(../img/svg/search.svg);
-  background-size: 16px 16px;
-  height: 16px;
-  width: 16px;
-  margin-right: 18px;
+.header__form{
+  position: relative;
+}
+
+.header__form::before{
+    display: inline-block;
+    content: ' ';
+    background-image: url(../img/svg/search.svg);
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+    margin-right: 18px;
+    position: absolute;
+    bottom: 15px;
 }
 
 .header__user-link--login:before {
@@ -687,6 +697,7 @@ button {
 .slider__title {
   font-size: 47px;
   font-family: Gilroy, Arial, sans-serif;
+  font-weight: 700;
   color: #000000;
   letter-spacing: 0.59px;
   line-height: 56px;
@@ -821,6 +832,7 @@ button {
 .info__title {
   font-family: Gilroy, Arial, sans-serif;
   color: #000000;
+  font-weight: 700;
   line-height: 48px;
   letter-spacing: 0.59px;
   font-size: 47px;
