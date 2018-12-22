@@ -146,12 +146,16 @@
       <ul class="category__list">
         <li class="category__item">
           <a class="category__link category__link--vr" href="#">
-            <p class="category__text">Виртуальная реальность</p>
+            <p class="category__text">Виртуальная
+              <br>
+              реальность</p>
           </a>
         </li>
         <li class="category__item">
           <a class="category__link category__link--selfie" href="catalog.html">
-            <p class="category__text">Моноподы для селфи</p>
+            <p class="category__text">Моноподы
+              <br>
+              для селфи</p>
           </a>
         </li>
         <li class="category__item">
@@ -177,44 +181,54 @@
       </ul>
     </section>
     <section class="services">
-      <ul class="services__list">
-        <li class="services__item">
-          <button class="services__btn btn"> Доставка</button>
-        </li>
-        <li class="services__item">
-          <button class="services__btn btn"> Гарантия</button>
-        </li>
-        <li class="services__item">
-          <button class="services__btn btn"> Кредит</button>
-        </li>
-      </ul>
-      <div class="services__content services__content--delivery">
-        <h2 class="services__title">Доставка</h2>
-        <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-          бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </div>
-      <div class="services__content services__content--assurance">
-        <h2 class="services__title">Гарантия</h2>
-        <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
-          мы выдадим вам новый. Товар, не дом, конечно же.</p>
-      </div>
-      <div class="services__content services__content--credit">
-        <h2 class="services__title">Кредит</h2>
-        <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-          наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-      </div>
+      <div class="services-wrapper">
+        <ul class="services__list">
+          <li class="services__item">
+            <button class="services__btn btn services__btn--delivery services__btn--active"> Доставка</button>
+          </li>
+          <li class="services__item">
+            <button class="services__btn btn services__btn services__btn--assurance"> Гарантия</button>
+          </li>
+          <li class="services__item">
+            <button class="services__btn btn services__btn services__btn--credit"> Кредит</button>
+          </li>
+        </ul>
+        <div class="services__content services__content--delivery">
+          <h2 class="services__title">Доставка</h2>
+          <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+            бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+        <div class="services__content services__content--assurance visually-hidden">
+          <h2 class="services__title">Гарантия</h2>
+          <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
+            мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </div>
+        <div class="services__content services__content--credit visually-hidden">
+          <h2 class="services__title">Кредит</h2>
+          <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+            наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </div>
     </section>
     <section class="partners">
       <ul class="partners__list">
         <li class="partners__item">
-          <img class="partners__image" src="img/content/logo-1.png" width="260" height="100" alt="partner"></li>
+          <img class="partners__image" src="img/content/logo-1.png" width="260" height="100" alt="partner">
+          <img class="partners__image-hover" src="img/content/logo-1-hover.jpg" width="260" height="100" alt="partner">
+        </li>
         <li class="partners__item">
-          <img class="partners__image" src="img/content/logo-2.png" width="260" height="100" alt="partner"></li>
+          <img class="partners__image" src="img/content/logo-2.png" width="260" height="100" alt="partner">
+          <img class="partners__image-hover" src="img/content/logo-2-hover.jpg" width="260" height="100" alt="partner">
+        </li>
         <li class="partners__item">
-          <img class="partners__image" src="img/content/logo-3.png" width="260" height="100" alt="partner"></li>
+          <img class="partners__image" src="img/content/logo-3.png" width="260" height="100" alt="partner">
+          <img class="partners__image-hover" src="img/content/logo-3-hover.jpg" width="260" height="100" alt="partner">
+        </li>
         <li class="partners__item">
-          <img class="partners__image" src="img/content/logo-4.png" width="260" height="100" alt="partner"></li>
+          <img class="partners__image" src="img/content/logo-4.png" width="260" height="100" alt="partner">
+          <img class="partners__image-hover" src="img/content/logo-4-hover.jpg" width="260" height="100" alt="partner">
+        </li>
       </ul>
+      </div>
     </section>
     <section class="info">
       <div class="info__about">
@@ -234,9 +248,9 @@
         <p class="info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
         <div class="info__map"><a href="https://yandex.ru/maps/?um=constructor%3A7b6adae69f985ca09ab548a3f4c1b7796be622b5287a14f5df2106f51090e696&amp;source=constructorStatic"
-          target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A7b6adae69f985ca09ab548a3f4c1b7796be622b5287a14f5df2106f51090e696&amp;width=560&amp;height=222&amp;lang=ru_RU"
-            alt="" style="border: 0;" /></a>
-          </div>    
+            target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A7b6adae69f985ca09ab548a3f4c1b7796be622b5287a14f5df2106f51090e696&amp;width=560&amp;height=222&amp;lang=ru_RU"
+              alt="" style="border: 0;" /></a>
+        </div>
         <a class="info-btn btn">напишите нам</a>
       </div>
     </section>
@@ -327,7 +341,8 @@
       <button class="write-us-btn-submit btn" type="submit">отправить</button>
     </form>
     <button class="btn__close">
-      <svg class="write-us-btn" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg>
+      <svg class="write-us-btn" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+        <path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z" /></svg>
     </button>
   </div>
   <div class="map visually-hidden">
