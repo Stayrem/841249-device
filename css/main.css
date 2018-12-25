@@ -375,6 +375,7 @@ button {
   background-image: url(../img/svg/search.svg);
   background-repeat: no-repeat;
   background-position-y: center;
+  padding-right: 10px;
 }
 
 .header__search:focus {
@@ -382,7 +383,7 @@ button {
 }
 
 .header__search:focus+.header__btn {
-  visibility: visible;
+  opacity: 1;
 }
 
 .header__btn {
@@ -390,7 +391,7 @@ button {
   height: 49px;
   border: 2px solid #000000;
   margin-left: -4px;
-  visibility: hidden;
+  opacity: 0;
   position: absolute;
   margin-right: 100px;
   bottom: 0.5px;
@@ -400,10 +401,12 @@ button {
 .header__btn:hover {
   background: #000;
   color: #fff;
+  opacity: 1;
 }
 
 .header__btn:focus {
   color: rgba(256, 256, 256, 0.3);
+  opacity: 1;
 }
 
 .header__user-menu-item--search {
