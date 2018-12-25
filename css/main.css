@@ -372,6 +372,9 @@ button {
   height: 30px;
   outline: none;
   padding-left: 40px;
+  background-image: url(../img/svg/search.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 .header__search:focus {
@@ -417,6 +420,34 @@ button {
 
 .menu__item--delivery {
   width: 17%;
+  position: relative;
+}
+
+.menu__item--contacts {
+  position: relative;
+}
+
+.menu__item--contacts::after {
+  content: "01";
+  font-size: 179px;
+  font-weight: 600;
+  line-height: 179.2px;
+  display: block;
+  position: absolute;
+  font-family: Gilroy, Arial, sans-serif;
+  color: #fff;
+  right: -16px;
+  top: 68px;
+}
+
+.menu__item--delivery::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  background-color: #fff;
+  top: 118px;
 }
 
 .header__user-compare {
@@ -431,6 +462,7 @@ button {
   position: relative;
 }
 
+/*
 .header__form::before {
   display: inline-block;
   content: ' ';
@@ -443,7 +475,7 @@ button {
   bottom: 6px;
   left: 4px;
 }
-
+*/
 .header__user-link--login:before {
   display: inline-block;
   content: ' ';
@@ -687,6 +719,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   max-width: 1160px;
+  position: relative;
 }
 
 .slider__item {
@@ -694,6 +727,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   margin-top: -111px;
+  position: relative;
 }
 
 .slider__img {
@@ -732,6 +766,7 @@ button {
 
 .slider-btn-container {
   margin-top: 5px;
+  position: relative;
 }
 
 .slider__table {
@@ -814,20 +849,21 @@ button {
   justify-content: space-between;
 }
 
-.partners__item{
+.partners__item {
   position: relative;
   cursor: pointer;
 }
 
-.partners__item:hover :last-child{
+.partners__item:hover :last-child {
   opacity: 1;
 }
 
-.partners__image-hover{
+.partners__image-hover {
   opacity: 0;
   position: absolute;
   top: 0;
 }
+
 /*info*/
 .info {
   display: -webkit-box;
@@ -1866,7 +1902,7 @@ button {
   bottom: 172px;
 }
 
-.services__content--assurance::after{
+.services__content--assurance::after {
   content: "";
   width: 171px;
   height: 194px;
@@ -1877,7 +1913,7 @@ button {
   bottom: 195px;
 }
 
-.services__content--credit::after{
+.services__content--credit::after {
   content: "";
   width: 156px;
   height: 186px;
