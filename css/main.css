@@ -709,7 +709,9 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 87px;
@@ -1418,7 +1420,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1504,6 +1508,19 @@ button {
 }
 
 /*write-us*/
+@keyframes bounce{
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}
+
+.modal-us-show{
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.9s;
+}
+
 .write-us {
   width: 960px;
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
@@ -1707,8 +1724,12 @@ button {
 }
 
 .category__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 200px;
   margin: 0;
 }
@@ -1737,6 +1758,8 @@ button {
 
 .category__link::before {
   content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   width: 160px;
@@ -1751,6 +1774,8 @@ button {
   content: "";
   width: 97px;
   height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 52px;
@@ -1762,6 +1787,8 @@ button {
   content: "";
   width: 86px;
   height: 117px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 41px;
@@ -1773,6 +1800,8 @@ button {
   content: "";
   width: 71px;
   height: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 38px;
@@ -1784,6 +1813,8 @@ button {
   content: "";
   width: 107px;
   height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 50px;
@@ -1795,6 +1826,8 @@ button {
   content: "";
   width: 56px;
   height: 98px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 33px;
@@ -1806,6 +1839,8 @@ button {
   content: "";
   width: 132px;
   height: 69px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 49px;
@@ -1816,8 +1851,12 @@ button {
 /*services*/
 
 .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 288px;
   background-color: #e5e5e5;
@@ -1825,6 +1864,8 @@ button {
 
 .services-wrapper {
   min-width: 1160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1841,6 +1882,8 @@ button {
 
 .services__list::after {
   content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   width: 7px;
@@ -1890,6 +1933,8 @@ button {
   content: "";
   width: 136px;
   height: 164px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
 }
@@ -1898,6 +1943,8 @@ button {
   content: "";
   width: 136px;
   height: 164px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url(../img/svg/delivery.svg);
   position: relative;
@@ -1909,6 +1956,8 @@ button {
   content: "";
   width: 171px;
   height: 194px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url(../img/svg/warranty.svg);
   position: relative;
@@ -1920,6 +1969,8 @@ button {
   content: "";
   width: 156px;
   height: 186px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url(../img/svg/credit.svg);
   position: relative;

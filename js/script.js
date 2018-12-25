@@ -2,6 +2,7 @@
 let writeUsBtn = document.querySelector(".info-btn");
 let writeUsPopUp = document.querySelector(".write-us");
 let writeUsBtnClose = document.querySelector(".btn__close");
+let loginWriteUs = writeUsPopUp.querySelector(".write-us__name")
 
 //map variables
 let mapOpen = document.querySelector(".info__map");
@@ -26,6 +27,8 @@ let allServicesContent = document.querySelectorAll(".services__content");
 writeUsBtn.addEventListener("click", function(evt){
     evt.preventDefault();
     writeUsPopUp.classList.remove("visually-hidden");
+    writeUsPopUp.classList.add("modal-us-show");
+    loginWriteUs.focus();
 });
 
 //close
@@ -43,6 +46,7 @@ writeUsBtnClose.addEventListener("click", function(evt){
 mapOpen.addEventListener("click", function(evt){
     evt.preventDefault();
     map.classList.remove("visually-hidden");
+    map.classList.add("modal-us-show");
 });
 
 //close
