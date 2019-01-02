@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>HTML Academy: Девайс</title>
 </head>
 
@@ -14,25 +14,24 @@
       <a class="header__logo page-logo" href="index.html">
         <span class="header__logo--hover">device</span>
       </a>
-      <ul class="header__user-menu user-menu user-menu--modify">
-        <li class="header__user-menu-item header__user-menu-item--search">
-          <form class="header__form" action="https://echo.htmlacademy.ru" method="POST">
-            <label class="visually-hidden" for="header__search">поиск</label>
-            <input id="header__search" name="search" type="search" class="header__search search" placeholder="Поиск по сайту">
-            <button class="header__btn" type="submit">Найти</button>
-          </form>
-        </li>
-        <li class="header__user-menu-item header__user-sign-in">
-          <a href="#" class="header__user-link header__user-link--login">Валентин Петухов</a>
-          <a href="#" class="header__user-link login">Выйти</a>
-        </li>
-        <li class="header__user-menu-item header__user-compare">
-          <a href="#" class="header__user-link header__user-link--compare">Сравнить</a>
-        </li>
-        <li class="header__user-menu-item header__user-basket">
-          <a href="#" class="header__user-link header__user-link--basket">Корзина</a>
-        </li>
-      </ul>
+      <div class="header__user">
+        <form class="header__form" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden" for="header__search">поиск</label>
+          <input id="header__search" name="search" type="search" class="header__search search" placeholder="Поиск по сайту">
+          <button class="header__btn" type="submit">Найти</button>
+        </form>
+        <ul class="header__user-menu user-menu">
+      <li class="header__user-menu-item header__user-sign-in">
+        <a href="#" class="header__user-link header__user-link--login">Войти</a>
+      </li>
+      <li class="header__user-menu-item header__user-compare">
+        <a href="#" class="header__user-link header__user-link--compare">Сравнить</a>
+      </li>
+      <li class="header__user-menu-item header__user-basket">
+        <a href="#" class="header__user-link header__user-link--basket">Корзина</a>
+      </li>
+    </ul>
+      </div>
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item menu__item--catalog">
@@ -81,7 +80,7 @@
   <main class="main-catalog">
     <div class="catalog-wrapper">
       <h1 class="main__title">Моноподы для селфи</h1>
-      <nav class="nav">
+      <nav class="catalog-nav">
         <ul class="nav__list">
           <li class="nav__item nav__item--arrow">
             <a class="nav__link" href="index.html">Главная</a>
@@ -115,13 +114,13 @@
             </ul>
             <ul class="sort__list sort__list--triangles">
               <li class="sort__item-tr">
-                <a class="sort__link--triangle" href="#">
-                  <img src="img/svg/icon-up-dir.svg" alt="">
+                <a class="sort__link--up" href="#">
+                  
                 </a>
               </li>
               <li class="sort__item-tr">
-                <a class="sort__link--triangle" href="#">
-                  <img src="img/svg/icon-down-dir.svg" alt="">
+                <a class="sort__link--down" href="#">
+                  
                 </a>
               </li>
             </ul>
