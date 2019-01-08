@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
   <title>HTML Academy: Девайс</title>
 </head>
 
@@ -79,39 +79,44 @@
   </header>
   <main class="main-index">
     <section class="slider">
-      <div class="slider__item">
-        <img class="slider__img" src="img/content/slider-1.png" alt="selfi">
+        <div class="slder-nav">
+            <div class="slider-nav-item slider-nav-item--first slider-nav-item--active"></div>
+            <div class="slider-nav-item slider-nav-item--second"></div>
+            <div class="slider-nav-item slider-nav-item--third"></div>
+          </div>  
+      <div class="slider__item slider__content--first">
+        <img class="slider__img" src="img/content/slider-1.png" alt="selfi" height="486" width="384">
         <div class="slider__content">
-          <h2 class="slider__title">Делай селфи, как Бен Стиллер!</h2>
-          <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-            метров длиной и весом всего 5 килограмм.</p>
+          <h2 class="slider__title slider__title--selfie">Делай селфи, как Бен Стиллер!</h2>
+          <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине.</p>
+          <p class="slider__text">Восемь (Восемь, Карл!)
+              метров длиной и весом всего 5 килограмм.</p> 
           
             <a class="slider-btn btn" href="catalog.html">Подробнее</a>
           
           <table class="slider__table">
             <tr class="slider__tr slider__tr--first">
-              <td class="slider__td">8,5 м</td>
-              <td class="slider__td">5 кг</td>
-              <td class="slider__td">Карбон</td>
+              <td class="slider__td slider__td--meters ">8,5 м</td>
+              <td class="slider__td slider__td--weight">5 кг</td>
+              <td class="slider__td slider__td--material">Карбон</td>
             </tr>
             <tr class="slider__tr slider__tr--second">
-              <td class="slider__td">Длина палки</td>
-              <td class="slider__td">Вес палки</td>
-              <td class="slider__td">Материал</td>
+              <td class="slider__td slider__td--second">Длина палки</td>
+              <td class="slider__td slider__td--second">Вес палки</td>
+              <td class="slider__td slider__td--second">Материал</td>
             </tr>
           </table>
         </div>
       </div>
-      <div class="slider__item d-none">
-        <img class="slider__img" src="img/content/slider-2.png" alt="slider-img">
+      <div class="slider__item d-none slider__content--second">
+        <img class="slider__img" src="img/content/slider-2.png" alt="slider-img" height="485" width="345">
         <div class="slider__content">
-          <h2 class="slider__title">Худеем правильно!</h2>
+          <h2 class="slider__title slider__title--bracelet">Худеем правильно!</h2>
           <p class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
             соблюдать диету.</p>
-          <div class="slider-btn-container">
+          
             <a class="slider-btn btn" href="catalog.html"> Подробнее</a>
-          </div>
-          <table class="slider-table">
+          <table class="slider__table">
             <tr class="slider__tr slider__tr--first">
               <td class="slider__td">48 часов</td>
             </tr>
@@ -121,16 +126,15 @@
           </table>
         </div>
       </div>
-      <div class="slider__item d-none">
-        <img class="slider__img" src="img/content/slider-3.png" alt="dron">
+      <div class="slider__item d-none slider__content--third">
+        <img class="slider__img slider__img--dron" src="img/content/slider-3.png" alt="dron" height="334" width="526">
         <div class="slider__content">
           <h2 class="slider__title">Порхает как бабочка, жалит как пчела!</h2>
           <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным под стандартную камеру.</p>
-          <div class="slider-btn-container">
+          
             <a class="slider-btn btn" href="catalog.html"> Подробнее</a>
-          </div>
-          <table class="slider-table">
+          <table class="slider__table">
             <tr class="slider__tr slider__tr--first">
               <td class="slider__td">800 м</td>
               <td class="slider__td">50 м</td>
@@ -245,7 +249,7 @@
         <a href="#" class="about-btn btn">подробнее о нас</a>
       </div>
       <div class="info__contacts">
-        <h2 class="info__title">Контакты</h2>
+        <h2 class="info__title info__title--contacts">Контакты</h2>
         <p class="info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
         <div class="info__map"><a href="https://yandex.ru/maps/?um=constructor%3A7b6adae69f985ca09ab548a3f4c1b7796be622b5287a14f5df2106f51090e696&amp;source=constructorStatic"

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
   <title>HTML Academy: Девайс</title>
 </head>
 
@@ -22,7 +22,8 @@
         </form>
         <ul class="header__user-menu user-menu">
       <li class="header__user-menu-item header__user-sign-in">
-        <a href="#" class="header__user-link header__user-link--login">Войти</a>
+        <a href="#" class="header__user-link header__user-link--login">Валентин Петухов</a>
+        <a href="#" class="header__user-link header__user-link--logout">Выйти</a>
       </li>
       <li class="header__user-menu-item header__user-compare">
         <a href="#" class="header__user-link header__user-link--compare">Сравнить</a>
@@ -81,9 +82,9 @@
     <div class="catalog-wrapper">
       <h1 class="main__title">Моноподы для селфи</h1>
       <nav class="catalog-nav">
-        <ul class="nav__list">
+        <ul class="nav__list ">
           <li class="nav__item nav__item--arrow">
-            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link nav__link--first" href="index.html">Главная</a>
           </li>
           <li class="nav__item nav__item--arrow">
             <a class="nav__link" href="#">Каталог товаров</a>
@@ -135,8 +136,15 @@
                 <legend class="filter__name">Стоимость</legend>
                 <div class="filter__price">
                   <div class="filter__price-point"></div>
-                  <div class="filter__price-line"></div>
-                  <div class="filter__price-point"></div>
+                  <div class="filter__price-line">
+                    <div class="filter__price-afterline">
+                    </div>
+                  </div>
+                  <div class="filter__price-point filter__price-point--afterline"></div>
+                  <div class="filter__price-block">
+                    <p class="filter__price-value">от 0</p>
+                    <p class="filter__price-value">до 5000</p>
+                  </div>
                 </div>
               </fieldset>
               <fieldset class="filter__field">
@@ -198,7 +206,7 @@
                 </div>
               </article>
               <article class="catalog__item">
-                <img class="catalog__img" src="img/content/item-1.png" alt="product" height="380" width="360">
+                <img class="catalog__img" src="img/content/item-2.png" alt="product" height="380" width="360">
                 <div class="catalog__wrapper">
                   <div class="catalog__title">
                     <a href="#" class="catalog__link">Профессиональнаяa <br> селфи-палка</a>
