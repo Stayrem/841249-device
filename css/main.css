@@ -345,10 +345,11 @@ button {
   letter-spacing: 0.26px;
   margin-left: -1px;
   text-decoration: none;
+  width: 166.5px;
 }
 
 .header__logo--catalog {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 
