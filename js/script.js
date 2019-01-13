@@ -2,7 +2,9 @@
 let writeUsBtn = document.querySelector(".info-btn");
 let writeUsPopUp = document.querySelector(".write-us");
 let writeUsBtnClose = document.querySelector(".btn__close");
-let loginWriteUs = writeUsPopUp.querySelector(".write-us__name")
+let loginWriteUs = writeUsPopUp.querySelector(".write-us__name");
+let emailWriteUs = writeUsPopUp.querySelector(".write-us__mail");
+let formSubmit = document.querySelector(".write-us-btn-submit");
 
 //map variables
 let mapOpen = document.querySelector(".info__map");
@@ -10,13 +12,13 @@ let mapClose = document.querySelector(".map-btn");
 let map = document.querySelector(".map");
 
 //services variables
-let serviceBtnDelivery = document.querySelector(".services__btn--delivery");
-let serviceBtnAssurance = document.querySelector(".services__btn--assurance");
-let serviceBtnCredit = document.querySelector(".services__btn--credit");
+let serviceBtnDelivery = document.querySelector(".services__item--delivery");
+let serviceBtnAssurance = document.querySelector(".services__item--assurance");
+let serviceBtnCredit = document.querySelector(".services__item--credit");
 let serviceContentDelivery = document.querySelector(".services__content--delivery");
 let serviceContentAssurance = document.querySelector(".services__content--assurance");
 let serviceContentCredit = document.querySelector(".services__content--credit");
-let allServicesBtn = document.querySelectorAll(".services__btn");
+let allServicesBtn = document.querySelectorAll(".services__item");
 let allServicesContent = document.querySelectorAll(".services__content");
 
 //slider variables
@@ -30,6 +32,8 @@ let secondNavBtn = document.querySelector(".slider-nav-item--second");
 let thirdNavBtn = document.querySelector(".slider-nav-item--third");
 
 ////////////////////////////////////////////////////////////////////
+
+
 
 //slider functions
 firstNavBtn.addEventListener("click", function(evt){
@@ -80,11 +84,8 @@ writeUsBtn.addEventListener("click", function(evt){
 writeUsBtnClose.addEventListener("click", function(evt){
     evt.preventDefault();
     writeUsPopUp.classList.add("visually-hidden");
+    writeUsPopUp.classList.remove("modal-us-show");
 });
-
-///////////////////////////////////////////////////////////////////
-
-//map functions
 
 //open
 
@@ -99,48 +100,23 @@ mapOpen.addEventListener("click", function(evt){
 mapClose.addEventListener("click", function(evt){
     evt.preventDefault();
     map.classList.add("visually-hidden");
+    map.classList.remove("modal-us-show");
 })
 
+//form
+writeUsPopUp.addEventListener("submit", function(evt){
+    if(!loginWriteUs.value || !emailWriteUs.value){
+        evt.preventDefault();
+        console.log("Введите Имя и Email");
+        writeUsPopUp.classList.remove("modal-us-show");
+        writeUsPopUp.classList.add("modal-error");
+        return 0;
+    }
+    evt.preventDefault();
+    console.log("форма отправлена");
+    console.log(`Ваш логин:${loginWriteUs.value}\nВаш email:${emailWriteUs.value}`);
+});
+
+
 //services functions
-serviceBtnDelivery.addEventListener("click", function(evt){
-    allServicesBtn.forEach(function(evt) {
-        evt.classList.remove("services__btn--active");
-        evt.classList.add("services__btn");
-    });
-    serviceBtnDelivery.classList.add("services__btn--active");
-    serviceBtnDelivery.classList.remove("services__btn");
-
-    allServicesContent.forEach(function(evt){
-        evt.classList.add("visually-hidden")
-    })
-    serviceContentDelivery.classList.remove("visually-hidden");
-    
-});
-
-serviceBtnAssurance.addEventListener("click", function(evt){
-    allServicesBtn.forEach(function(evt) {
-        evt.classList.remove("services__btn--active");
-        evt.classList.add("services__btn");
-    });
-    serviceBtnAssurance.classList.add("services__btn--active");
-    serviceBtnAssurance.classList.remove("services__btn");
-
-    allServicesContent.forEach(function(evt){
-        evt.classList.add("visually-hidden")
-    })
-    serviceContentAssurance.classList.remove("visually-hidden");
-});
-
-serviceBtnCredit.addEventListener("click", function(evt){
-    allServicesBtn.forEach(function(evt) {
-        evt.classList.remove("services__btn--active");
-        evt.classList.add("services__btn");
-    });
-    serviceBtnCredit.classList.add("services__btn--active");
-    serviceBtnCredit.classList.remove("services__btn");
-    allServicesContent.forEach(function(evt){
-        evt.classList.add("visually-hidden")
-    })
-    serviceContentCredit.classList.remove("visually-hidden");
-});
 

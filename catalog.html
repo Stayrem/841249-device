@@ -11,8 +11,8 @@
 <body>
   
     <header class="header header--catalog">
-      <a class="header__logo page-logo" href="index.html">
-        <span class="header__logo--hover">device</span>
+      <a class="header__logo page-logo header__logo--catalog" href="index.html">
+        <span class="header__logo--hover ">device</span>
       </a>
       <div class="header__user">
         <form class="header__form" action="https://echo.htmlacademy.ru" method="POST">
@@ -36,7 +36,7 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item menu__item--catalog">
-            <div class="drop">
+            <div class="drop" tabindex="0">
               <a class="menu__link menu__link--catalog">каталог товаров</a>
               <div class="menu__dropdown-block">
                 <ul class="menu__dropdown">
@@ -104,7 +104,7 @@
             <h2 class="sort__title">сортировка:</h2>
             <ul class="sort__list sort__list--by">
               <li class="sort__item">
-                <a class="sort__link" href="#">По цене</a>
+                <a class="sort__link sort__link--active" href="#">По цене</a>
               </li>
               <li class="sort__item">
                 <a class="sort__link" href="#">По типу</a>
@@ -115,12 +115,12 @@
             </ul>
             <ul class="sort__list sort__list--triangles">
               <li class="sort__item-tr">
-                <a class="sort__link--up" href="#">
+                <a class="sort__link--up" href="#" title="По возрастанию">
                   
                 </a>
               </li>
               <li class="sort__item-tr">
-                <a class="sort__link--down" href="#">
+                <a class="sort__link--down" href="#" title="По убыванию">
                   
                 </a>
               </li>
@@ -170,7 +170,7 @@
                     <label class="checkbox-label" for="color__pink">Розовый</label></li>
                 </ul>
               </fieldset>
-              <fieldset class="filter__field mb">
+              <fieldset class="filter__field ">
                 <legend class="filter__name">Bluetooth</legend>
                 <ul class="radio__list">
                   <li class="radio__list-item">
@@ -191,7 +191,7 @@
           <div class="wrapper">
             <div class="catalog">
               <article class="catalog__item">
-                <img class="catalog__img" src="img/content/item-1.png" alt="product" height="380" width="360">
+                <img class="catalog__img" src="img/content/item-1.jpeg" alt="product" height="380" width="360">
                 <div class="catalog__wrapper">
                   <div class="catalog__title">
                     <a class="catalog__link" href="#">Любительская селфи-палка</a>
@@ -206,7 +206,7 @@
                 </div>
               </article>
               <article class="catalog__item">
-                <img class="catalog__img" src="img/content/item-2.png" alt="product" height="380" width="360">
+                <img class="catalog__img" src="img/content/item-2.jpeg" alt="product" height="380" width="360">
                 <div class="catalog__wrapper">
                   <div class="catalog__title">
                     <a href="#" class="catalog__link">Профессиональнаяa <br> селфи-палка</a>
@@ -221,7 +221,7 @@
                 </div>
               </article>
               <article class="catalog__item">
-                <img class="catalog__img" src="img/content/item-3.png" alt="product" height="380" width="360">
+                <img class="catalog__img" src="img/content/item-3.jpeg" alt="product" height="380" width="360">
                 <div class="catalog__wrapper">
                   <div class="catalog__title">
                     <a class="catalog__link" href="#">Непотопляемая селфи-палка</a>
@@ -236,7 +236,7 @@
                 </div>
               </article>
               <article class="catalog__item catalog__img--new">
-                <img class="catalog__img " src="img/content/item-4.png" alt="product" height="380" width="360">
+                <img class="catalog__img " src="img/content/item-4.jpeg" alt="product" height="380" width="360">
                 <div class="catalog__wrapper">
                   <div class="catalog__title">
                     <a class="catalog__link" href="#">Селфи-палка «Следуй за мной»</a>
@@ -252,7 +252,7 @@
               </article>
             </div>
             <nav class="pagination">
-              <a class="pagination__btn pagination__btn--back" href="#">назад</a>
+              <a class="pagination__btn " href="#">назад</a>
               <ul class="pagination__list">
                 <li class="pagination__item active">
                   <a class="pagination__link " href="#">1</a>
@@ -264,7 +264,7 @@
                   <a class="pagination__link" href="#">3</a>
                 </li>
               </ul>
-              <a class="pagination__btn pagination__btn--forward" href="#">вперёд</a>
+              <a class="pagination__btn" href="#">вперёд</a>
             </nav>
           </div>
         </div>
@@ -275,7 +275,7 @@
   <footer class="footer">
     <div class="footer-wrapper">
       <ul class="footer__user-menu">
-        <li class="footer__user-menu-item footer__user-menu-item--search page-logo">
+        <li class="footer__user-menu-item footer__user-menu-item--search page-logo footer__user-menu-item--catalog">
           <a class="footer__logo-link" href="index.html">device</a>
         </li>
         <li class="footer__user-menu-item user-sign-in">
@@ -309,13 +309,13 @@
       <div class="socials">
         <ul class="footer__socials">
           <li class="socials-item">
-            <a class="socials-link" href="#">
+            <a class="socials-link" href="#" title="facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                 <path fill="#7e7e7e" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z" /></svg>
             </a>
           </li>
           <li class="socials-item socials-item--instagram">
-            <a class="socials-link" href="#">
+            <a class="socials-link" href="#" title="instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                 <g fill="#7e7e7e">
                   <path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z" />
@@ -326,14 +326,14 @@
             </a>
           </li>
           <li class="socials-item">
-            <a class="socials-link" href="#">
+            <a class="socials-link" href="#" title="vkontakte">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                 <path fill="#7e7e7e" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z" /></svg>
             </a>
           </li>
         </ul>
         <div class="social-item--academy">
-          <a class="socials-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="socials-link" href="https://htmlacademy.ru/intensive/htmlcss" title="html academy">
             <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
               <path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" /></svg>
           </a>

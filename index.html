@@ -35,7 +35,7 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item menu__item--catalog">
-          <div class="drop">
+          <div class="drop" tabindex="0">
             <a class="menu__link menu__link--catalog">каталог товаров</a>
             <div class="menu__dropdown-block">
               <ul class="menu__dropdown">
@@ -79,7 +79,7 @@
   </header>
   <main class="main-index">
     <section class="slider">
-        <div class="slder-nav">
+        <div class="slider-nav">
             <div class="slider-nav-item slider-nav-item--first slider-nav-item--active"></div>
             <div class="slider-nav-item slider-nav-item--second"></div>
             <div class="slider-nav-item slider-nav-item--third"></div>
@@ -121,7 +121,7 @@
               <td class="slider__td">48 часов</td>
             </tr>
             <tr class="slider__tr slider__tr--second">
-              <td class="slider__td">Без подзарядки</td>
+              <td class="slider__td slider__td--second">Без подзарядки</td>
             </tr>
           </table>
         </div>
@@ -140,8 +140,8 @@
               <td class="slider__td">50 м</td>
             </tr>
             <tr class="slider__tr slider__tr--second">
-              <td class="slider__td">Дальность полёта</td>
-              <td class="slider__td">Радиус поражения</td>
+              <td class="slider__td slider__td--second">Дальность полёта</td>
+              <td class="slider__td slider__td--second">Радиус поражения</td>
             </tr>
           </table>
         </div>
@@ -152,14 +152,14 @@
         <li class="category__item">
           <a class="category__link category__link--vr" href="#">
             <p class="category__text">Виртуальная
-              <br>
+              
               реальность</p>
           </a>
         </li>
         <li class="category__item">
           <a class="category__link category__link--selfie" href="catalog.html">
-            <p class="category__text">Моноподы
-              <br>
+            <p class="category__text category__text--br">Моноподы
+              
               для селфи</p>
           </a>
         </li>
@@ -188,14 +188,14 @@
     <section class="services">
       <div class="services-wrapper">
         <ul class="services__list">
-          <li class="services__item">
-            <button class="services__btn btn services__btn--delivery services__btn--active"> Доставка</button>
+          <li class="services__item services__item--active services__item--delivery">
+            <button class="services__btn "> Доставка</button>
           </li>
-          <li class="services__item">
-            <button class="services__btn btn services__btn services__btn--assurance"> Гарантия</button>
+          <li class="services__item btn services__item--assurance">
+            <button class="services__btn "> Гарантия</button>
           </li>
-          <li class="services__item">
-            <button class="services__btn btn services__btn services__btn--credit"> Кредит</button>
+          <li class="services__item btn services__item--credit">
+            <button class="services__btn "> Кредит</button>
           </li>
         </ul>
         <div class="services__content services__content--delivery">
@@ -250,10 +250,11 @@
       </div>
       <div class="info__contacts">
         <h2 class="info__title info__title--contacts">Контакты</h2>
-        <p class="info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+        <p class="info__text info__text--contacts">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
         <div class="info__map"><a href="https://yandex.ru/maps/?um=constructor%3A7b6adae69f985ca09ab548a3f4c1b7796be622b5287a14f5df2106f51090e696&amp;source=constructorStatic"
-            target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A7b6adae69f985ca09ab548a3f4c1b7796be622b5287a14f5df2106f51090e696&amp;width=560&amp;height=222&amp;lang=ru_RU"
+            target="_blank">
+            <img width="560" height="222" src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A7b6adae69f985ca09ab548a3f4c1b7796be622b5287a14f5df2106f51090e696&amp;width=560&amp;height=222&amp;lang=ru_RU"
               alt="" style="border: 0;" /></a>
         </div>
         <a class="info-btn btn" href="form.html">напишите нам</a>
@@ -266,7 +267,7 @@
         <li class="footer__user-menu-item footer__user-menu-item--search page-logo">
           <a class="footer__logo-link" href="#">device</a>
         </li>
-        <li class="footer__user-menu-item user-sign-in">
+        <li class="footer__user-menu-item user-sign-in--footer user-sign-in">
           <a href="#" class="footer__user-link user-link--login">Войти</a>
         </li>
         <li class="footer__user-menu-item user-compare">
@@ -297,14 +298,14 @@
       <div class="socials">
         <ul class="footer__socials">
           <li class="socials-item">
-            <a class="socials-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <a class="socials-link" href="#" title="facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" >
                 <path fill="#7e7e7e" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z" /></svg>
             </a>
           </li>
-          <li class="socials-item socials-item--instagram">
+          <li class="socials-item socials-item--instagram" title="instagram">
             <a class="socials-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" >
                 <g fill="#7e7e7e">
                   <path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z" />
                   <path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z" />
@@ -314,15 +315,15 @@
             </a>
           </li>
           <li class="socials-item">
-            <a class="socials-link" href="#">
+            <a class="socials-link" href="#"  title="vkontakte">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                 <path fill="#7e7e7e" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z" /></svg>
             </a>
           </li>
         </ul>
         <div class="social-item--academy">
-          <a class="socials-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+          <a class="socials-link" href="https://htmlacademy.ru/intensive/htmlcss" title="html academy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09" >
               <path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" /></svg>
           </a>
         </div>
@@ -352,11 +353,12 @@
   </div>
   <div class="map visually-hidden">
     <a class="map-btn btn__close" href="https://yandex.ru/maps/?um=constructor%3A7b6adae69f985ca09ab548a3f4c1b7796be622b5287a14f5df2106f51090e696&source=constructorLink">
-      <img src="img/svg/modal-close.svg" alt="">
+      <img width="55" height="55" src="img/svg/modal-close.svg" alt="">
     </a>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7b6adae69f985ca09ab548a3f4c1b7796be622b5287a14f5df2106f51090e696&amp;width=960&amp;height=559&amp;lang=ru_RU&amp;scroll=true"></script>
   </div>
 
   <script src="js/script.min.js"></script>
 </body>
+
 </html>
