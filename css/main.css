@@ -311,7 +311,7 @@ button {
 }
 
 .btn:hover::before {
-  height: 100%;
+  height: 40px;
   top: 0;
 }
 
@@ -564,6 +564,10 @@ button {
 .header__form {
   position: relative;
   width: 561px;
+}
+
+.footer__user-sign-in{
+  margin-left: auto;
 }
 
 .header__user-link--login {
@@ -877,6 +881,7 @@ button {
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 1160px;
+  height: 486px;
 }
 
 .slider__title {
@@ -891,7 +896,7 @@ button {
   padding-top: 79px;
   margin: 0;
   padding-bottom: 19px;
-  width: 100%;
+  width: 104%;
 }
 
 .slider__title--selfie {
@@ -969,14 +974,14 @@ button {
 }
 
 .slider-nav-item {
-  background-image: url(../img/content/slider-btn-empty.jpeg);
+  background-image: url(../img/content/slider-btn-empty.jpg);
   height: 12px;
   width: 12px;
   cursor: pointer;
 }
 
 .slider-nav-item--active {
-  background-image: url(../img/content/slider-btn.jpeg);
+  background-image: url(../img/content/slider-btn.jpg);
 }
 
 .slider__table {
@@ -1236,6 +1241,7 @@ button {
 
 .user-sign-in {
   margin-right: 44px;
+  margin-left: auto;
 }
 
 .user-compare {
@@ -1347,10 +1353,6 @@ button {
   letter-spacing: 3.4px;
   padding-top: 5px;
   margin-left: 16px;
-}
-
-.footer__user-menu-item--catalog {
-  margin-right: 519px;
 }
 
 
@@ -2262,6 +2264,7 @@ button {
 .map {
   position: fixed;
   bottom: 13%;
+  left: 25%;
   z-index: 9999;
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
