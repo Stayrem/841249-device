@@ -349,7 +349,7 @@ button {
 }
 
 .header__logo--catalog {
-  margin-bottom: 12px;
+    margin-bottom: -1px;
 }
 
 
@@ -1828,7 +1828,7 @@ button {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.28px;
+  letter-spacing: 0.18px;
   width: 280px;
 }
 
